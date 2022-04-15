@@ -26,4 +26,4 @@ Read more about my [research](research).
 
 I also have some recommended material for anyone interested in [china](China). 
 
-I am working on collecting some of my thoughts on [machine-learning](machine-learning), the tools available and my excperience with those tools.
+I am working on collecting some of my thoughts on [machine-learning](machine learning), the tools available and my excperience with those tools.
