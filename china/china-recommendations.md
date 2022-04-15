@@ -18,4 +18,4 @@ A basic understanding of China is useful as it becomes a bigger part of the worl
 
 [back](https://mlmogford.github.io/china-index) 
 
-[home](https://mlmogford.github.io/)
+[home](https://mlmogford.github.io/.)
