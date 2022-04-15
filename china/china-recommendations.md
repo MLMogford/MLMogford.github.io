@@ -16,5 +16,6 @@ A basic understanding of China is useful as it becomes a bigger part of the worl
 - GuShi FM
 	- For those with intermediate to advanced Chinese language skills, this is a series of every-day stories recorded by local Chinese, similar to This American Life, but with less curation and input from the host AiZhi, the frequency of episodes means there will be something for everyone.
 
-[back](./)
-[home](././)
+[back](./china-index) 
+
+[home](./)
