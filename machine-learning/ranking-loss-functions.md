@@ -4,6 +4,6 @@ layout: default
 
 ## Machine Learning
 
-[back](./ml-index) 
+[back](https://mlmogford.github.io/ml-index) 
 
-[home](./)
+[home](https://mlmogford.github.io/)
