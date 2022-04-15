@@ -1,0 +1,50 @@
+# Site wide configuration
+
+title:            const blog = [...posts]
+locale:           en_US
+url:              https://luiscustodio.com
+#url:
+
+# Jekyll configuration
+
+#permalink:   /:categories/:title/
+permalink:   pretty
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+# Site owner
+owner:
+  name: Luis Custodio
+  avatar: bio-photo.jpg
+  bio: "A automation oriented developer, travelling the world"
+  email: blog@luiscustodio.com
+  disqus-shortname:
+  twitter: lfcustodio
+  facebook:
+  google:
+    analytics: 'UA-43220470-1'
+  bing-verify:
+  github: lcustodio
+  stackoverflow: 139637/custodio
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
