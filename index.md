@@ -1,8 +1,6 @@
 ## Michael Mogford
 
-[LinkedIn](https://www.linkedin.com/in/michael-mogford-a10428136/)
-
-[github](https://github.com/MLMogford)
+[LinkedIn](https://www.linkedin.com/in/michael-mogford-a10428136/)  [github](https://github.com/MLMogford)
 
 I am a consultant machine learning engineer and data scientist working on a variety of client projects and developing MLOps systems that maintain machine learning algorithms in production.
 
