@@ -4,6 +4,6 @@ layout: default
 
 ## Machine Learning
 
+[back](./ml-index) 
 
-[back](./)
-[home](././)
+[home](./)
