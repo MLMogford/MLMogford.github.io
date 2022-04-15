@@ -24,6 +24,6 @@ I am a consultant machine learning engineer and data scientist working on a vari
 
 Read more about my [research](research). 
 
-I also have some recommended material for anyone interested in [china](China). 
+I also have some recommended material for anyone interested in [China](china). 
 
-I am working on collecting some of my thoughts on [ml-index](machine learning), the tools available and my excperience with those tools.
+I am working on collecting some of my thoughts on [machine learning](ml-index), the tools available and my excperience with those tools.
