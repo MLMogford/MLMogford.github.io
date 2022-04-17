@@ -1,3 +1,11 @@
+---
+layout: default
+---
+
+## Machine Learning Opportunities - bigger than just machine learning, let's improve our own learning
+
+
+
 The benefits of machine learnig are that we can use machine learning as a practical tool to test out theoretical concepts and have relatively quick and broadly testable methods that attempt to answer those questions. 
 
 I am currently translating the memoir of a friend, this gives a handy comparison. Baidu translate works better translating Chinese to English, Google translate vice versa, but they both fail to communicate anyhting but basic meaning and deliver no style whatsoever. 
@@ -9,3 +17,8 @@ The English language has a massive vocabulary of many borrowed words as generati
 One thing that is common to these langhuages is the fast pace of change and development, where classical Chinese phrases and concepts may be spoken or written next to contemporary Chinese, and new phrases or 'internet slang' and invented and popularised daily. Similarly, Middle English, with the vast library of Shakespere as one example, is maintained in the lexicon of modern english, and phrases are used to express one's thoughts. With this, the vocabiularies of millenials with their connectedness to global English trends ismore accessable than ever.
 
 Machine learning gives us the opportunity to see the flaws in simple translationm mechanism and ask more profound questions, such as, "what is it about a bilingual English-Chinese speaker that can do a better job with a smaller vocabulary, than a huge algorithm that has ingested the entire internet corpi of English and Chinese works, includeing the best translations ever made?"
+
+
+[back](https://mlmogford.github.io/ml-index) 
+
+[home](https://mlmogford.github.io/)
