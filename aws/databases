@@ -32,3 +32,39 @@ https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.html
 
 
 
+
+
+
+
+Database endpoints
+
+for services that involve a clister of DB instances (e.g.. Aurora), each connection is handled by a specific DB instance.
+
+The intermediate handler between host name and theport is an *endpoint*
+
+Primary instance handles all DDL (data definitionlanguage), and DML (data manipulation language) statements
+
+endpoints allow you to map each connection to the appropriate instance or instance group in a case based manner
+
+Aurora automatically performs load balancing
+
+
+Custom Endpoint: creating a custom endpoint can help to modify traffic capacity for different user types.
+
+Reader Endpoints: automatic load balancing, but limited to read operations only
+
+Instance Endpoint: a cluster endpoint (writer endpoint) connects to primary DB instance for that DB cluster and can perform write operations such as DDL statements - this handles production traffic but not queries for reporting
+
+Reference:
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html
+
+
+
+
+
+
+
+
+
+
