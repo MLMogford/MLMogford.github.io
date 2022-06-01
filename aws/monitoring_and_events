@@ -42,5 +42,36 @@ https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welco
 
 
 
+#Events
+
+CloudTrail:
+an event is the record of a monitorable activity by a user, role or service in an AWS account
+events provide history of API and non-API account activity made through Management Console, SDKs, command-line tools and other AWS services 
+
+managemnet eventa and data events can be monitored (default is management only)
+
+can be applied to a single region or all regions (best practice (all regions in the AWS paritiion you are working in(default in CloudTrail console)))
+
+tracked regional ()EC2, S3, RDS etc.), tracked global (IAM, CloudFront, AWS WAF, and Route 53.)
+
+References:
+
+https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-global-service-events
+
+http://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html
+
+https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli.html
+
+
+
+
+
+
+
+
+
+
+
+
 
 
