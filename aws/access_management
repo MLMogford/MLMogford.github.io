@@ -1,0 +1,45 @@
+
+
+cross-account access is an IAM feature
+
+
+avoid duplicating resources in multiple accounts, which may be used for billing or administrative reasons
+Resource Access Manager (RAM) service enables sharing of resources with any AWS account, or within an Organisation securely and with ease.
+ - AWS Transit Gateways
+ - Subnets
+ - AWS License Manager configurations
+ - Amazon Route 53 Resolver rules resources
+ can all be shared
+ 
+ RAM shares centrally located resources among multiple accounts
+ 
+ An organisation can:
+  - concolidats all the company's accounts with AWS Organisations
+  - use RAM to share resources
+  - use IAM to set up cross account access
+  - 
+  
+  Control Tower is the easiest but not the most secure
+  
+  References:
+
+https://aws.amazon.com/ram/
+
+https://docs.aws.amazon.com/ram/latest/userguide/shareable.html
+
+
+
+principle of least priviledge
+
+resource ARN should give arn:aws:<service_name>:<region>:<IDnumber>:<table>/<specific_directory>
+ 
+leabing out <specific_directory> will gibve access to all directories within the service
+
+References:
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/using-identity-based-policies.html
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_lambda-access-dynamodb.html
+
+https://aws.amazon.com/blogs/security/how-to-create-an-aws-iam-policy-to-grant-aws-lambda-access-to-an-amazon-dynamodb-table/
+
