@@ -1,4 +1,8 @@
 
+---
+layout: default
+---
+
 
 #PROFESSIONAL EXPERIENCE  
 
@@ -74,3 +78,7 @@ pain patients
 BSc (Biomedical Science)  
 2012, University of Adelaide  
 Core subjects: physiology, anatomy, chemistry, pharmacology.  
+
+
+
+[home](https://mlmogford.github.io/.)
