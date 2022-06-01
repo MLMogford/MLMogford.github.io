@@ -66,5 +66,40 @@ https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.End
 
 
 
+Synchronous standby replicas
+
+if a DB instance is run as a Multi-AZ deployment, RDS automatically provisins anf maintains synchronous standby replica in a different AZ
+
+
+
+RDS read replica is asynchronous
+
+Reference:
+
+https://aws.amazon.com/rds/details/multi-az/
+
+
+
+Amazon RDS Overview:
+
+https://youtu.be/aZmpLl8K1UU
+
+
+
+DynamoDB and CloudFront do not have a Read Replica feature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
