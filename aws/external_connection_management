@@ -1,0 +1,30 @@
+
+
+AWS WAF is tightly integrated with Amazon CloudFront, the Application Load Balancer (ALB), Amazon API Gateway, and AWS AppSync 
+
+services used to deliver content for websites and applications
+
+WAF on CloudFront means all Edge Locations use your rules - close to end-users; so security doesn't come at the expense of performance
+
+blocked requests are stopped before they reach web servers. 
+
+If WAF is used on regional services (Application Load Balancer, API Gateway, AppSync), rules run in region and can protect internet-facing resources and internal resources..
+
+
+WAF web ACL rules can be used to temporarily block users i.e. for excessive requests, based on regular rules or rate based rules
+
+1. create a web ACL, 2. associate it with ALB 3. when a rule triggers, WAF applies the action to additional requests from the IP address until rate falls
+
+cannot deny traffic using security groups
+
+References:
+
+https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html
+
+https://aws.amazon.com/waf/faqs/
+
+
+
+
+
+
