@@ -1,5 +1,21 @@
 
 
+S3 buckets can be versioned and have MFA applied to them to prevent unapproved deletion of data
+
 Reference:
 
 https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html
+
+
+
+Cross-Origin Resource Sharing allows web apps in a client-side app to selectively interact with resources in another domain (i.e. your S3 resources accessed by a remote domain).
+
+
+References:
+
+http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ManageCorsUsing.html
+
+
+Cross-Region Replication enables copy of objects across buckets loacted in separate regions in an automatic, asynchronous manner.
