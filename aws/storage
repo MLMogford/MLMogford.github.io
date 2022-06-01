@@ -54,4 +54,58 @@ https://aws.amazon.com/blogs/startups/picking-the-right-data-store-for-your-work
 
 
 
+data security
+
+at rest and in transit via encryption
+if data stored in EBS volumes - enable EBS encryption
+if S3, enable client-side and server-side encryption (s3 server side, no such ing as on premises)
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-public-data-sets.html
+
+
+
+
+
+block storage
+
+EBS:
+easy to use, hugh performance block storage - for use with EC2
+for throughput and transaction-intensive workloads at any scale
+relational and non-relational databases, enterprise applications, containerised apps, big data analytics engines, file systems, media workflows
+
+instance store: a temporary block volume
+
+
+S3
+object storage - scalable, available, secure, performant
+websites, apps, backup and restore, archive, IoT, big data analytics
+lifecycle config - S3 standard/S3 standard-IA/Intelligent-Tiering/One Zone-IA(imfrequently accessed)/Glacier(archive)/Glacier deep archive
+
+
+
+persistent block storage volume for mission critical workloads - EBS volumes
+object storage service - S3 to store backup data
+
+
+References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html
+
+https://aws.amazon.com/s3/storage-classes/
+
+
+
+
+
+
+
+
+
+
 
