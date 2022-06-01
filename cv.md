@@ -4,7 +4,7 @@ layout: default
 ---
 
 
-#PROFESSIONAL EXPERIENCE  
+# PROFESSIONAL EXPERIENCE  
 
 Consilium Technolody  
 Jan. 2022 – Present  
@@ -33,7 +33,7 @@ Nov. 2013 - June 2014, Dec. 2019 - Present
 Homework Club Tutor, Social Support Program Volunteer  
 
 
-#EDUCATION  
+# EDUCATION  
 
 PhD in Computer Science    
 University of Adelaide, Australian Institute for Machine Learning  
