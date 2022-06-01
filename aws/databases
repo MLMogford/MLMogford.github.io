@@ -92,6 +92,36 @@ DynamoDB and CloudFront do not have a Read Replica feature
 
 
 
+##Speeding up databases/caching
+
+
+#DynamoDB Accellerator (DAX)
+fully managed
+highly available
+in-memory cache
+can reduceDynamoDB response times mili to micro seconds, at even millions of requests per second
+
+
+
+ElastiCache
+may use elastichache as database cache, not reduce DynamoDB as much as DAX
+
+Device Farm
+an app testing service, allows testing and interaction with Android, iOS, and web apps on many devices at once, reproduce issues on a device in real time
+
+DynamoDB Auto Scalinng
+primarily used to automate capacity management for tables and global secondary indexes
+
+
+
+References:
+
+https://aws.amazon.com/dynamodb/dax
+
+https://aws.amazon.com/device-farm
+
+
+
 
 
 
