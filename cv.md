@@ -8,15 +8,15 @@ layout: default
 ## Consilium Technolody  
 Jan. 2022 – Present  
 *Machine Learning Engineer, Data Scientist*  
-Creating enterprise solutions using best-practice Machine Learning engineering practices
-Deploying and maintaining ML models in production 
-Comfortable with architecting within the AWS environment using AWS and open source resources
-> SageMaker
-> Lambda
-> EC2
-> ECR and ECS
-> Docker
-> terraform
+Creating enterprise solutions using best-practice Machine Learning engineering practices  
+Deploying and maintaining ML models in production   
+Comfortable with architecting within the AWS environment using AWS and open source resources  
+> SageMaker  
+> Lambda  
+> EC2  
+> ECR and ECS  
+> Docker  
+> terraform  
 
 
 ## University of Adelaide  
