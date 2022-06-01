@@ -22,6 +22,8 @@ I am a consultant machine learning engineer and data scientist working on a vari
     - International relations research and event organisation (2015 Boyer Lecture) at the Peking University Australian Studies Centre 
     - CS masters at Tsinghua University 
 
+My CV, outlining my broad experiences and qualifications can be found [here](cv). 
+
 Read more about my [research](research). 
 
 I also have some recommended material for anyone interested in [China](china-index). 
