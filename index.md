@@ -17,6 +17,7 @@ I am a consultant machine learning engineer and data scientist working on a vari
  - Experimental design and hypothesis testing 
  - Algorithm development for ML systems 
  - Clear communication skills of complex concepts to a broad audience 
+ - Current Senior First Aid Certificate  
  - Cross-cultural experience living in Beijing for five years 
     - Chinese language study at Peking University 
     - International relations research and event organisation (2015 Boyer Lecture) at the Peking University Australian Studies Centre 
