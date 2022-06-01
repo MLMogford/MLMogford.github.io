@@ -1,0 +1,29 @@
+
+
+AWS has differenct ways of managing users of your web app
+
+CloudFront signed URLs
+
+signed cookies
+
+both have the same basic functionality, however:
+
+signed URLs are used for:  
+ - RTMP distributions, signed cookies do not support these.  
+ - restricting access to individual files such as app installation downloads
+ - if used do not have a client that supports cookies
+ 
+signed cookies can be used:
+ - when multiple restricted file access is to be provided
+ - current URLs should not change
+ 
+
+CloudFront with Match Viewer (an ORIGIN Protocol Policy) communicates with your origin using HTTP or HTTPS
+
+CloudFront with Field-Level Encryption will only alloy secure upload to web servers, and not downloads
+
+Reference:
+
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-choosing-signed-urls-cookies.html
+
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html
