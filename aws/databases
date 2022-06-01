@@ -1,1 +1,34 @@
 
+AWS has many database services catering for relational (SQL) and non-relational (NoSQL) needs.
+
+
+
+For a data model whose structure changes frequently, a database should also be dynamic. 
+
+SQL choices are Aurora, Amazon RDS
+
+while the NoSQL options are DynamoDB
+
+For ad hoc queries, a well defined schema, database-driven apps that are developer-optimesed and easy to scale up woth faster hardware, relational databases are the best option.
+Primarily used to suppot complex queries that do not require schemas that are more flexible.
+The do not scale well because this paradigm normaloises and stores data on multiple tables that require multiple queries to write to disk, thegenerally incur ACID-comlpliant transaction performance costs, and use joins to resemble rquired queries which are computationally expensive.
+
+
+For web-scale apps that do not require schema, but where each table must have a primary key, that are designed to scale outusing distributed hardware clusters.
+NoSQL databases such as DynamoDB can manage structured or semi-structured data. 
+The advantage of NoSQL databases are that rows and elements can be easily added or removed from the table entry. It is beneficial for low-latency, high-traffic queries.
+NoSQL scales well because of its scema flexibility allowing it to store complex hierachical data within a single item, and related items may be stored close together on the same table via the composite key design
+
+RedShift is also NoSQL and is generally used for OLAP systems.
+
+
+references:
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general-nosql-design.html
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-relational-modeling.html
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.html
+
+
+
