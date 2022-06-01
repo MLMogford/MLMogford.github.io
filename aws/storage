@@ -19,3 +19,39 @@ https://docs.aws.amazon.com/AmazonS3/latest/dev/ManageCorsUsing.html
 
 
 Cross-Region Replication enables copy of objects across buckets loacted in separate regions in an automatic, asynchronous manner.
+
+
+
+#storage types
+
+object storage:
+ - S3 (object storage, scalablility, securit, availability, performance; hot and cold options)
+
+File Storage:
+ - EFS (fully managed, scalable storage in Amazon Cloud, not high performance enough for ML requirements)
+ - FSx for windows (managed windows file system, not parallel like Lustre is)
+ -FSx for Lustre (fast processing, parallel file system to reduce bottlenecks)
+
+block storage:
+ - EBS (cold EBS is more expensive than S3 glacier - less gor for for archiving)
+
+backup :
+ - AWS backup
+
+data transfer:
+ - AWS storage gateway, datasync, transfer family, snow family
+
+
+References:
+
+https://aws.amazon.com/fsx/
+
+https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-storage-optimization/aws-storage-services.html
+
+https://aws.amazon.com/blogs/startups/picking-the-right-data-store-for-your-workload/
+
+
+
+
+
+
