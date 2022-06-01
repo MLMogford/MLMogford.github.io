@@ -1,0 +1,29 @@
+
+
+reserved innstances:
+
+ - significant discount compared to on demand, can change families, OS types, tenancies, are not physical instances
+
+ - can be standard or convertable
+       - more discounted than convertable
+       - cannot exchange a standard reserved instance
+       - can modify both standard and convertable
+       - can modify the Availability Zone, scope, network platform, or instance size
+       - can sell standard
+       - cannot sell convertable
+
+- single instance type, platform, scope, and tenancy
+
+dedicated instances:
+ - runs in a VPC on hardware that's dedicated to a single customer 
+ 
+ References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html
+
+https://aws.amazon.com/ec2/pricing/reserved-instances/
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-types.html
+
