@@ -1,1 +1,46 @@
 
+
+
+##Messaging Services
+
+MQ:
+moving a messagings service to the cloud quickly and easily
+Inductry standard APIs and protocols
+
+
+Building new applications in the cloud - use SQS or SNS
+
+both are lightweight, fully managed queue and topic services
+highly scalable, simple APIs
+
+can be used to decouple and scale microservices, distributed systems, serverless applications, improve relaibility
+
+SQS:
+fully managed message queuing service
+not support extensive list of industry-stndard messaging APIs and protocols
+
+
+
+SNS
+
+suitable as a pub/sub messaging service instrad of message broker-service
+
+
+SWF:
+
+fully managed state stracker and task coordinator, not a messaging service
+
+
+References:
+
+https://aws.amazon.com/amazon-mq/faqs/
+
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html#sqs-difference-from-amazon-mq-sns
+
+
+
+
+
+
+
+
