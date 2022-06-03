@@ -1,0 +1,31 @@
+
+
+Docker app running on vECS cluster behind a load balancer,heavily using DynamoDB.
+
+improve the database performance by distributing the workload evenly and using the provisioned throughput efficiently. 
+
+
+this is the intersection between scalable orchestrated apps and daabases
+
+each partition key portion of a table's primary key determines logical partitions in which a table's data is stored
+
+if a partition key design does not distribute I/O requests evenly, 'hot' partitions result is throttling and inefficient I/O use
+
+the more distinct partition key-values theworkload accesses, the more requests will spread across the partitioned workspaces
+and provisioned throughput will be used more efficiently as the partition key-value accessed to total number of partition key values ratio increases
+
+more partition keys means more distribution and more spread access and efficient use of throughput
+
+a composit primary key will helpprovide mor partition for the table and improve performacne
+
+References:
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-uniform-load.html
+
+https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/
+
+
+
+
+
+
