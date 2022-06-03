@@ -102,8 +102,29 @@ https://aws.amazon.com/s3/storage-classes/
 
 
 
+S3 security
+
+versioning and MFA
+
+Versioning is a means of keeping multiple variants of an object in the same bucket. You can use versioning to preserve, retrieve, and restore every version of every object stored in your Amazon S3 bucket. With versioning, you can easily recover from both unintended user actions and application failures.
+
+If the MFA (Multi-Factor Authentication) Delete is enabled, it requires additional authentication for either of the following operations:
+
+- Change the versioning state of your bucket
+
+- Permanently delete an object version
 
 
+Reference:
+
+http://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html
+
+
+signed URLs
+
+gives more control over access to content
+
+IAM bucket policy can prevent deletion for a partucular user
 
 
 
