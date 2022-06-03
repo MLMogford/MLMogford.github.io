@@ -57,6 +57,31 @@ https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html
 
 
 
+ensure high availability of the systems, the Solutions Architect needs to create a solution that allows them to monitor the memory and disk utilization metrics of all the instances.
+
+CloudWatch has available EC2 metrics to monitor CPU utiliation, Network utilisation, Disk performance, Desk read/writes
+
+can be installed on both Linux and Windows-based instances.
+
+ - install CloudWatch agent to all EC2 instances that gathers the memory and disk utilisation data, view custom metrics on cloudwatch
+ 
+ must be custom because
+ 
+ default, CloudWatch does not automatically provide memory and disk utilisation metrics of your instances.
+
+no Enhanced Monitoring, is a feature of Amazon RDS.
+
+not Amazon Inspector, an automated security assessment service that helps you test the network accessibility of your Amazon EC2 instances and the security state of your applications running on the instances
+
+References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mon-scripts.html#using_put_script
+
+
+
+
 
 
 
