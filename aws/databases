@@ -148,6 +148,24 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html#m
 
 
 
+a current app processes and stores global data every minute, is hosted on-premises data center and uses ORacle databasse
+urgent need to migrate their infrastructure to AWS to improve perfomance
+need to ensure database is properly migrated and should remain available in case of server failure
+
+ - RDS multi-AZ deployment rovides enhanced availability and durability for DB instances, when you provide a multi0az db instance RDS automatically creates a primary DB instance and synchronously replicares data to a standby instance in a different AZ
+ 
+ multi az deployments ensure high availabilityeven if the primary database instance goes down - can create an oracle db in rds with multi-az deployments
+ 
+oracle rman and rac are not supported in rds
+
+migrating oracle databases to aurora takes time - not acceptable - aurora is only single instance with no read replica and not configures as aurora db cluster
+
+
+References:
+
+https://aws.amazon.com/rds/details/multi-az/
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html
 
 
 
