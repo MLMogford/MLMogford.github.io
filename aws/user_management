@@ -27,3 +27,53 @@ Reference:
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-choosing-signed-urls-cookies.html
 
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html
+
+
+
+
+
+
+
+
+if you have a social media website that uses CloudFront and users are experiencing delays in logging in and HTTP 504 errors
+
+Lambda@Edge allows you to run Lambda functions to customise content that CloudFront delivers - with execution occuring closer to the user.
+
+Lambda functions can be used to changeCloudFront requests and responses:
+
+ - after CloudFront receives a request form a viewer
+ - Before CF receives a request to the origin
+ - Afrer CF forwards the request to the origin
+ - Before CF forwards response to the viewer
+ 
+ 
+ 
+ to avoid slow login times and 504 messages
+ 
+ customised CF web dist. content usitn Lambda@Edge - allow Lambda functions to execute auth process in users' locations
+ 
+ set up an origin failover by creating an origin group with 2. origins, one as primary origin, secondary is switched to automatically is specific HTTP status is returned
+ 
+ geographically dispersed VPCs are more expensive to set up and maintain
+ 
+ login is not caching of a static object
+ 
+ using Route53 to route incoming traffic to lowest latency is significantly more expensive
+ 
+ References:
+
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html
+
+https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html
+
+
+
+
+ 
+ 
+
+
+
+
+
+
