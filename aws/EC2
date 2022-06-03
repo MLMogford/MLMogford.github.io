@@ -27,3 +27,41 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-types.html
 
+
+
+
+
+
+
+
+cost-effective solution without affecting the performance of a web application hosted in an Auto Scaling group of EC2 instances.
+
+auto scaling
+
+Step scaling policies and simple scaling policies are two of the dynamic scaling options available for you to use. Both require you to create CloudWatch alarms for the scaling policies.
+
+target tracking scaling: increase or decrease the current capacity of the group based on a target value for a specific metric.adds or removes capacity as required to keep the metric at, or close to, the specified target value.
+
+scheduled scaling: predictable traffic patterns.
+
+simple scaling: need to wait for the cooldown period to complete before initiating additional scaling activities.
+
+suspend and resume scaling: temporarily pause scaling activities triggered by your scaling policies and scheduled actions.
+
+References:
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html
+
+
+
+
+
+
+
+
+
+
+
+
