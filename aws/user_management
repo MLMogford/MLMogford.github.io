@@ -69,7 +69,30 @@ https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html
 
 
 
- 
+situation:
+ElastiCache for Redis as its distributed session management component. 
+other Cloud Engineers in your department have access to your ElastiCache cluster,
+ have to secure the session data in the portal by requiring them to enter a password before they are granted permission to execute Redis commands.
+
+- redis auth command improves data secutiry by requiring users to enter a password before they grant permission to execute Redis commands on a Redis server that is passowrd protected
+
+this is not possible in IAM
+
+Redis At-Rest Encryption only secures data inside the in-memory data store
+
+in-transit is only part of the solution
+
+References:
+
+https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html
+
+https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/encryption.html
+
+
+
+
+
+
  
 
 
