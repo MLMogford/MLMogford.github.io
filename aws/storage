@@ -130,3 +130,30 @@ IAM bucket policy can prevent deletion for a partucular user
 
 
 
+for sue with EC2 instances in an autoscaling group
+
+older files stored in a different class
+
+transition from EFS to IA storage maximum days for the EFS lifecycle policy is only 90 days.
+
+this is 2 years maximum for S3
+
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html
+
+https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html
+
+https://aws.amazon.com/s3/faqs/
+
+
+
+
+
+
+
+
+
+
+
