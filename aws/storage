@@ -150,6 +150,48 @@ https://aws.amazon.com/s3/faqs/
 
 
 
+Security
+
+Macie is a ML powered security device - helps prevent data loss by automatically discovering, classifying, and protecting sensitive data stored in S3
+
+
+
+
+amazon Rekognition can identify objects, people, text, scenes, activites and inappropraite content
+
+GuardDuty is a threat detection service that continuously monitors for malicious activity and unorthorised behavious to protect workloads
+
+Inspector is an automated security assessment that helps improve security and compliance of apps deployed on AWS
+
+
+References:
+
+https://docs.aws.amazon.com/macie/latest/userguide/what-is-macie.html
+
+https://aws.amazon.com/macie/faq/
+
+https://docs.aws.amazon.com/macie/index.html
+
+
+
+Presigned URL access can allow only certain URLs to access data for a certain amount of time
+
+cloudfront can speed up the service network delivery to download content from S3
+
+NACL IP bloking is not an efficient method as changing IP adress overcomes this
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ShareObjectPreSignedURL.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectOperations.html
+
+
+
+
+
+
+
 
 
 
