@@ -123,6 +123,32 @@ https://aws.amazon.com/device-farm
 
 
 
+# RDS
+RDS provices real time metrics for OS that DB runs on, can view using the console, or consume Enhanced Monitoring JSON output form CloudWatch Logs in monitoring system of yiour choice
+
+Enhanced Monitoring metrics are stored in CloudWatch for 30 days - can be modified in RDSOSMetrics log group in CloudWatch
+
+CloudWatch gathers metrics about CPU utilization from the hypervisor for a DB instance
+
+Enhanced Monitoring gathers its metrics from an agent on the instance.
+
+CloudWatch can monitor CPU utiliastion - but not provide CPU bandwidth and total memory consumed by each database process in your RDS instance.
+
+
+CPU% and MEM% metrics are not readily available in the Amazon RDS console,
+
+
+References:
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.html#USER_Monitoring.OS.CloudWatchLogs
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html#monitoring-cloudwatch
+
+
+
+
+
+
 
 
 
