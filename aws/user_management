@@ -92,6 +92,34 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/encryption.html
 
 
 
+API Gateway provides throttling at multiple levels
+ - global
+ - at service call
+ 
+throttling limits can be set for standard rates and bursts
+
+i.e. API owners can set a rte limit of 1000 requests per second for a specific method in RESR APIs
+
+and also configure API Gateway to handle bursts of 2000 requests per second for a few seconds
+
+a request over the limit receives 429HTTP response
+
+if anticipate significant increase in site visitors and new users in the coming days ahead.
+
+protect the backend systems of the platform from traffic spikes
+
+ - enabling throttling limits and result caching in API Gateway is
+ 
+cache is provisioned for a specific stage of your APIs. This improves performance and reduces the traffic sent to your back end. 
+
+CloudFront only speeds up content delivery which provides a better latency experience for your users. It does not help much for the backend.
+
+Reference:
+
+https://aws.amazon.com/api-gateway/faqs/
+
+
+
 
  
 
