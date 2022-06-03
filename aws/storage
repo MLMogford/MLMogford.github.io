@@ -192,8 +192,31 @@ https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectOperations.html
 
 
 
+Amazon FSx for Windows File Server 
+
+fully managed
+highly reliable
+scalable file storage
+accessible over Service Message Block (SMB) protocol
+
+accessible from Windows, Linux, and MacOS compute instances and devices.
 
 
+
+
+Amazon EFS does not support Windows systems, only Linux OS.
+
+can't integrate Amazon S3 with your existing Active Directory to provide authentication and access control.
+
+NFS file share is mainly used for Linux systems.
+
+References:
+
+https://docs.aws.amazon.com/fsx/latest/WindowsGuide/aws-ad-integration-fsxW.html
+
+https://aws.amazon.com/fsx/windows/faqs/
+
+https://docs.aws.amazon.com/storagegateway/latest/userguide/CreatingAnSMBFileShare.html
 
 
 
