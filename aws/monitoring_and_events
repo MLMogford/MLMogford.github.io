@@ -65,6 +65,26 @@ https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and
 
 
 
+# cloud watch events with minimal effort
+
+run EC2 tasks when AWS events occur
+
+i.e. when a file is uploaded to a certain S3 bucket using S3 PUT operation or DELETE operation
+
+1. create. cloud watch events rule, for S3 object-level operations (PUT, DELETE)
+
+object-level operations - create a CloudTrail trail first, in taergets section - ECS task - input is cluster name, task definition, task count (2 rules, scale up and scale down)
+
+no need to create your own lambda function - cloudwatch events rule will do this
+
+References:
+
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatch-Events-tutorial-ECS.html
+
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Events-Rule.html
+
+
+
 
 
 
