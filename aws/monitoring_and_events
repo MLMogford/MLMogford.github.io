@@ -86,6 +86,35 @@ https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Eve
 
 
 
+SQS messages
+
+messages in SQS queues will continue to exist after the EC2 instance has been processed - until the message is deleted
+
+the message must be deleted after processing the to prevent the message from received and processed again once visibility timeout expires
+
+Distributed messaging systems:
+ - the components of your distributed system (EC2 instances)
+ - the queue (SQS)
+ - mesages in the queue
+ 
+a system wuth several components send messages that are stored across multiple SQS servers
+
+ - message sent to a queue, distributed across SQS servers redundantly
+ - when the second component is ready to process a mesagfe it consumes it from the queue, that first message is returned
+ while it is being processed, it remains in the queue and not returned to subsequent receive requests for visibility timeout
+ - second component deletes message A to prevent message from being received and processed again once visibility itmeout
+ 
+ long polling helps reduce the cost of SQS by eliminating number of emoty resources and false empty responses (messages sent twice is unlikely))
+ 
+ References:
+
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-lifecycle.html
+
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-basic-architecture.html
+
+
+
+
 
 
 
