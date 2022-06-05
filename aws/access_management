@@ -96,6 +96,35 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#
 
 
 
+resources hosted noth on-premises network and in AWS cloud
+
+want all Software Architects to access resources on both environments using on-premises credentials - stored in an Active Directory
+
+company is using Microsoft Active Directory - implements Security Assertion Markup Language (SAML)
+set up a SAML-Based Federation for API Access to AWS cloud
+can easily connect to AWS using login credentials of on-premises network
+
+AWS ssupports identity federation with SAML 2.0
+open standard that many identity providers (IdPs) use
+enables federted single sign-on (SSO) so users can log into aWS management console or call AWS APIs without having to create an IAM user for everyone
+simplify process for configuring federation with AWS by using SAML because you cann use ISP's service instead of writing custom identity proxy code
+
+before this - must configure organisation's IdP and AWS account to trust each other
+1. inside organisation must have IdP that supprots SAML 2.0 - like Microsoft Active Directory Federation Service, Shibboleth or other
+
+
+Web Identity Federationn is for users signing in via well known external IdP i.e. Amazon, Facebook, Google - not utilise Active Directry
+
+IAM users requires IAM user accounts, not using existing credentials in Active Directory
+
+VPC only lets you privision logically isolted section of AWS cloud - where you can launch AWS resources in a virtual network that you define - nothing to do with user auth or Active Directory
+
+References:
+
+http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html
+
 
 
 
