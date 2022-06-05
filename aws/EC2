@@ -112,6 +112,26 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
 
 
 
+scaling:
+
+known busy periods
+Scheduled scaling policy for the Auto Scaling group to launch new instances before the start of the day
+
+Dynamic scaling policy for the Auto Scaling group to launch new instances based on 
+ - CPU utilization
+ - Memory utilization 
+By the time either the CPU or Memory hits a peak, the application already has performance issues,
+
+Application Load Balancer (ALB) to your architecture to ensure that the traffic is properly distributed on the instances 
+Application load balancer can also balance the traffic, it cannot increase the instances based on demand.
+
+
+Reference:
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html
+
+
+
 
 
 
