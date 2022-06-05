@@ -141,6 +141,30 @@ https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide
 
 
 
+for a highly available architecture consistng of an ELB and several EC2 instances configured with auto-scaling within 3 AVs
+want to monitor EC2 instances based on a particular metric - not readily available on cloud watch
+
+CloudWatch has EC2 metrics for monitoring:
+ - CPU utilisation 
+ - network utiisation
+ - disk reads - determining volume of daa in app reads from hard disk - speed of app
+ 
+ not readily available metrics: 
+- Memory utilization
+- Disk swap utilization
+- Disk space utilization
+- Page file utilization
+- Log collection
+
+
+References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mon-scripts.html#using_put_script
+
+
+
 
 
 
