@@ -170,6 +170,145 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html
 
 
 
+website hosted by EC2, uses Aurors managed by RDS
+sell an item, data removed from current listings and forwarded to a distributed processing system
+
+can invoke a lambda function from Aurora MySQL-Compatible Edition DB with a native fucntion or a stored procedure
+useful when you want to integrate database running on Aurora MySQL with other AWS resources
+(capture data changes whenever a row in a table is modified in the database)
+
+trigger a Lambda function whenever a listing is deleted form the database - can write the logic of the function to send the listing data to a SQS queue and have different processes consume it
+
+RDS events only provide operational events such as DB instacne events, DB parameter group events, DB security group events, DB snapshot events
+need to capture data-modifying events (INSERT, DELETE, UPDATE)
+
+1. Create a native function or a stored procedure that invokes a Lambda function. 
+2. Configure the Lambda function to send event notifications to an Amazon SQS queue for the processing system to consume.
+
+References:
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Lambda.html
+
+https://aws.amazon.com/blogs/database/capturing-data-changes-in-amazon-aurora-using-aws-lambda/
+
+
+
+
+
+
+implement a 'follow' feature when people subscribe to a certian update they recieve an email
+
+DynamoDB stream
+an ordered flow of information about changes to items in a DynamoDB table
+enable a stream on a table - DynamoDB captures information about every modification to data items in the table
+
+whenever an app creates, updates, deletes table items
+DynamoDB Streams writes a stream record with the primary key attribute(s) of the items modified
+A *stream record* contains information abou tthe data modification to a single item in a Dynamo DB table
+can configure the stream so that the stream records capture additional information such as 'before' and 'after' images of modified items
+
+DynamoDB is integrated with lambda so can create 'triggers' - code that automatically respond to events in DynamoDB Streams
+can build apps that react to data modifications in DynamoDB via triggers
+
+enable DynamoDB Streams - associate the stream ARN with a lambda function that you write
+immediately after an item in the table is modified, a new record appears in the table's strean
+Lambda polls the stream and invokes the lambda synchronously when it detects new stream records
+Lambda can perform any actions specified, i.e. sending a notification or initiating a workflow
+
+enable Dynamo DB stream
+create a Lambda trigger
+create IAM role which contains all permissions that lambda function will need at runtime
+data from stream record processed by Lambda function - publish message to SNS topic - notify subscribers via email
+
+
+
+DynamoDB Streams with Kinesis Adapter is OK, but Streams must be activated manually
+
+DAX improves in-memory read performance, not capture time-ordered sequence of item-level modifications
+
+References:
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.Tutorial.html
+
+
+
+
+most cost effective and suitable database set up for:
+retail website with intermittent, sporadic, unpredictable transactional workloads, hard to predict
+on premises website hosting to be migrated to AWS - new relational DB that autoscales capacity 
+
+Aurora serverless is on-demand, auto-scaling scnfig for Aurora
+an Aurora serverless DB cluster - DB cluster that automatically starts, shuts down, scales up or down to compute capacity based on app needs
+
+serverless - simple, cost-effective option for infrequent, sporadic or unpredictable workloads
+non-erverless is provisioned Aurora DB - choose DB size and create Aurora Replicas to increase read throughput
+if workload changes you can modify DB instance class and change number of Replicas
+works well when database workload is predictable - can adjust capacity manually based on expected workload
+
+Aurora serverless - can create database endpoint without specifying DB instance class size
+set minimum and maximum capacity
+database endpoint connects to a *proxy fleet* that routes workload to a fleet of resources that automatically scaled
+because of proxy fleet - connections are continuous as Aurora Serverless scales resources based on min max capacity specifications
+Serverless manages connections automatically, sclaing is rapid because of 'warm' resources that are always ready to service requests
+storage and processing are separate - scale down to 0 processing anf pay for only storage
+
+
+
+Aurora Provisioned cluster with Burstable performance DB instance class type
+Aurora Provisioned DB cluster not suitable for intermittent, sporadic, unpredictable transactional workloads
+this works well when database workload is predictable bbecause capacity can be adjusted manually based on expected workload
+
+DynamoDB is NoQL and so is not appropriate in this instance - used when yuo need a fully managed, multi-region, multi master database with fast, local, read and write performance for massively scaled global apps
+
+Redshift data warehouse cluster with concurrency scaling is for online analytical processing (OLAP) and not for transactional processing (OLTP)
+concurrency scaling is a Redshift feature that automatically and elatically scales query processing power of Redshift cluster for hundreds of concurrent queries
+
+References:
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html
+
+
+
+
+
+relational database needs to be set up and disaster recovery plan to mitigate multi-region failure
+
+requires Recovery Point Objective of 1 second and a Recovert Time Objective of less than one minute
+
+Aurora Global Database:
+ - designed for globally distributed apps
+ - allow single Aurora database to span multiple AWS regions
+ - replicates data with no impact on database performance
+ - enables fast local reads with low latency in each region
+ - provides disaster recovery from region-wide outages
+ - supports storage-based replication that has latency < 1 second
+ - in case of outage, secondary regions assigned can be promoted to read-write capabilities in nles thann 1 second
+ - RTO less that 1 minute provides strong foundation for global business continuity plan
+ 
+ DynamoDB global tables is NoSQL
+ 
+ MultiAZ RDS with cross region replicas - multi AZ deployment is only applicable inside a single region, not multi-region
+ database setup isnot capable of providing RPO of 1 sec and RTO less than 1 minute
+ replication of cross-region RDS Read Replica is not as fast compared with Aurora Global Databases
+ 
+ Global Accellerator is a networking service that simplifies traffic management and improves app performance
+ not a relational database server
+ 
+ 
+ References:
+
+https://aws.amazon.com/rds/aurora/global-database/
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html
+
+
+
+
+
 
 
 
