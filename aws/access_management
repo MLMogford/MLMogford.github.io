@@ -43,3 +43,54 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_lam
 
 https://aws.amazon.com/blogs/security/how-to-create-an-aws-iam-policy-to-grant-aws-lambda-access-to-an-amazon-dynamodb-table/
 
+
+
+
+
+IAM policies - CloudFormation and S3
+
+manage access in AWS by creating policies adn attaching them to IAM identities (users, groups, roles), or AWS resources
+
+policy: an object that is associated with an identity or resource, defines permissions
+
+IAM principal (user or role) makes a request - AWS evaluates the policies
+
+most policies stored as JSON documents 6 policy types:
+ - identity-based
+ - resource-based
+ - permission boundaries
+ - Organisations SCPs
+ - ACLs
+ - session policies
+ 
+IAM policies define permissions for action regardless of method used to perfoem operation. e.g. if policy allows GerUser, a user with that policy can get user information from AWS Management COnsole, AWS CLI or API
+is console access is allowed, an IAM user can sign in to the console using a user name and password, programmatic access allowed - user can use access keys to work with the CLI or API
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectOps.html
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
