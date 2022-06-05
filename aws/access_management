@@ -74,7 +74,23 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
 
 
 
+access an On-Demand EC2 instance form a certiain IP address via an SSH connection
 
+a security grup acts as a virtual firewall for your instance to controk inbound and outbound traffic
+
+VPC launch, can assign up to 5 security groups to the instance
+
+security groups act at the instance level- not subnet level - each subnet of VPC can be assignedto a different set of security groups
+
+
+requirement- only allow individual IP of client and not entire network - prpoer CIDR notation should be used
+/32 denotes one IP address
+/0 refers to the entire network
+SSH protocol uses TCP and port 22
+
+Reference:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#security-group-rules
 
 
 
