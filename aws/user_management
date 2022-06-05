@@ -121,7 +121,25 @@ https://aws.amazon.com/api-gateway/faqs/
 
 
 
+ scenario: global web portal, upcoming massiveincrease in global users
+ how to protect backend systems from traffic spikes
  
+ API Gateway provides throttling at multiple levels (global, by a service call), limits can be set for standard rates and bursts
+ 
+ API owners can set a rate limit of 1000 requests oer second for a specific method in REST APIs, and configure API Gateway to handle a burst of 2000 req per soc for a few seconds
+ 
+ any requests over the API Gateway limit will recieve 429 HTTP response
+ 
+ 
+ API Gateway will not automatically scale and handle massive traffic spikes, can scale using Edge locations, still need to configure throttling to manage bursts of your APIs
+ 
+ Reference:
+
+https://aws.amazon.com/api-gateway/faqs/#Throttling_and_Caching
+
+
+
+
 
 
 
