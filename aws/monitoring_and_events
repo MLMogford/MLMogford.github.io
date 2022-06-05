@@ -116,6 +116,27 @@ https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-b
 
 
 
+# monitoring a redshift cluster (used for a data warehouse)
+monitor all API calls in a redshift instance and provide secured data for auditing and comliance
+
+CloudTrail:
+enables governance, complance, opertional auditing, risk suditing
+log, continuously monitor and retain account activity related to actions across AWS infrastructure
+default: enabled on AWS account upon creation
+provides event history, including, AWS account activity, actions taken through AWS management console, SDKs, command line tools, API calls, other AWS services
+
+CloudWatch is a monitoring service but cannot track API calls to AWS resources
+
+X-Ray is not suitable to track API calls to AWS resources - helps debug and analyse microservices apps with request tracing - find root cause of issues and performance
+
+Redshift Spectrum: not a monitoring service, a feature of Redshift - enables you to query and analyse all data in S3 using open data formats
+
+
+References:
+
+https://aws.amazon.com/cloudtrail/
+
+https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html
 
 
 
