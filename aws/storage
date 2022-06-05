@@ -222,3 +222,39 @@ https://docs.aws.amazon.com/storagegateway/latest/userguide/CreatingAnSMBFileSha
 
 
 
+
+
+Using S3 with messaging services
+
+S3 notification feature: allows notification for certain events that occur in a bucket
+
+to add notifications:
+ - add a notification configuration that identifies the events you want S3 to publish and destinations where you want S3 to send the notifications
+ - can store this configuration in the notification subresource associated with a bucket
+ destinations supported are: SNS topic, SQS queue, Lambda
+ 
+ SNS: *fanout* scenario - when a message is published to an SNS topic replicated and pushed to multiple endpoints (SQSqueues, HTTP(S) endpoints)Lambda
+ allows for asynchronous parallel processing
+ 
+ SNS order placed - SQS queues subscribe to the SNS topic receive identical notifications - EC2 server instance attached to an SQS queue handles processing/fulfillment - another EC2 server instance to a data warehouse for analysis
+ 
+ S3 event notifications designed to be delivered at least once, to one destination only - cannot attach two or more SNS topics or SQS queues for one S3 event notification - therefore send the event notification to S3 - message fanout pattern create topic and use 2 SQS sueues to subscribe to the topic - is SNS receives an event notification, it publishes the message to both subscribers
+ 
+can only add one CQC or SNS at a time for S3 events notifications - multiole subscribers require fanout pattern with SNS and SQS
+
+SNS cannot be polled, can configure each SQS queue to subbscribe to the topic
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ways-to-add-notification-config-to-bucket.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-overview
+
+https://docs.aws.amazon.com/sns/latest/dg/welcome.html
+
+
+
+
+
+
+
