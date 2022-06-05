@@ -258,3 +258,54 @@ https://docs.aws.amazon.com/sns/latest/dg/welcome.html
 
 
 
+Scenario: fleet of auto-scaled, On-Demand EC2 instances with Aurors - stores file documents in one of attached EBS volumes - slow performance
+ - implement a scalable, high-available POSIX compliant shared file system
+ 
+ Use EFS: simple, scalable, slastic file storage on EC2 instances
+ provides a standard file system interface and file system semantics
+ integrate EFS with existing apps and tools
+ multiple EC2 instances cann access EFS at same time, commopn data source for workloads
+ 
+ fleet of On-Demand EC2 instances that store file documents from the users to one attached EBS volume, system is slow because does not allow parallel shared access to EC2 instances
+ EBS can be attached to multiple instances, but, only within an AV, 
+ we need high-available storage accross AVs
+ file storage - not S3 (not provide notion of 'diractories' or 'folders')
+ 
+ EBS is a storage area network (SAN) - not POSIX-compliant
+ ElastiCache is an in-memory store
+ 
+ Reference:
+
+https://aws.amazon.com/efs/
+
+
+
+
+
+Storage Gateway is primarily used to integrate your on-premises network to AWS, not for apps
+using file share in Storage Gateway implies will still keep on-premises systems and not entirely migrate it
+
+EBS is block store and not a shared file system
+
+References:
+
+https://aws.amazon.com/fsx/windows/faqs/
+
+https://docs.aws.amazon.com/fsx/latest/WindowsGuide/migrate-file-share-config-to-fsx.html
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
