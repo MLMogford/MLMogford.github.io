@@ -1,0 +1,28 @@
+
+
+
+use EC2 instance in a private subnet for internal corporate web portal
+
+EC2 must send data to DynamoDB and S3 via private wndpoints that don't pass through the public internet
+
+VPC endpoint allows private  connection form VPC to AWS and VPC endpoint services powered by PrivateLink without needing an Internet gatreway, NAT computer, VPN connection or Direct Connect connection
+
+VPC instances do not require public IP addreses to communicate with resources in the service
+
+traffic between VPC and other services does not leave the Amazon networl
+
+
+Transit Gateway connects VPC and on-premises networks through a central hub
+acts as a cloud router that allows you to integrate multiple networks
+
+Direct Connect
+primarily used to establish a dedicated network connection from premises to AWS
+
+References:
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/vpc-endpoints-dynamodb.html
+
+https://docs.aws.amazon.com/glue/latest/dg/vpc-endpoints-s3.html
+
+
+
