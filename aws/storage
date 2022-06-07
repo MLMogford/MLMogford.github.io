@@ -342,5 +342,31 @@ https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html
 
 
 
+AWS services for storing session state data
+
+Dynamo DB
+
+
+ElastiCache
+
+both provide high-performance storage of key-value pairs - can beused to build a highly available web app
+
+
+Redshift is warehousing - bnot suitable for session state, used more for analytics and OLAP
+
+RDS is a relational database and best not for session states, may not provide  performance for same cost as DynamoDB
+
+
+References:
+
+https://aws.amazon.com/caching/database-caching/
+
+https://aws.amazon.com/caching/session-management/
+
+
+
+
+
+
 
 
