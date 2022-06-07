@@ -254,7 +254,29 @@ https://aws.amazon.com/blogs/security/are-kms-custom-key-stores-right-for-you/
 
 
 
+using Lambda to build and run apps without having to set up or manage servers
+Lambda connects to a MongoDB Atlas
+uses a third party API to fetch certain data for app
+create MongoDB environent variabels (hostname, usernme, password, API credentials) used fby lambda for DEV, SIT, UAT, PROD environments
 
+lambda stored sensitive datbase and api credentials
+how to secur this to prevent other devs ort anyone from seeing them in plain text
+
+creating a lambda taht uses environment variables, lambda encrypts them using KMS when lambda is invoked
+they are decrypted and made availale in lambda code
+
+1. first time create or update lambda functions that use env variables in a region, a default service key is created in KMS
+2. that key is used to encrypt environment variables
+3. can use encryptin helpers and use KMS to encrypt environment variables after lambda is created
+4. must create own KMS key and choose it instead of default key - defualt key gives errors
+
+
+
+References:
+
+https://docs.aws.amazon.com/lambda/latest/dg/env_variables.html#env_encrypt
+
+https://docs.aws.amazon.com/lambda/latest/dg/tutorial-env_console.html
 
 
 
