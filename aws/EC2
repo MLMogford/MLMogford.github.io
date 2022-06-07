@@ -132,6 +132,35 @@ https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html
 
 
 
+need to provision new EC2 with persistent block storage volume to migrate data from on premises to AWS
+
+maximum performance requirements is storage volume with 64000 IOPS
+
+
+EBS: durable, block-level storage device can be attached to instances, flixible, can persist independently from the life of an instance
+
+simce 64000 IPOS is required, need a nitro-based EC2 instance
+Nitro System: underlying platform for latest EC2 instances, reducing cost of customers, increased security, new instance types
+
+
+mInstance Store volumes are block storage but are not persistent
+EFS is file systems and not block storage
+
+
+
+References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#EBSVolumeTypes_piops
+
+https://aws.amazon.com/s3/storage-classes/
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html
+
+
+
+
+
+
 
 
 
