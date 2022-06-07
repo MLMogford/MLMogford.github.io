@@ -26,3 +26,43 @@ https://docs.aws.amazon.com/glue/latest/dg/vpc-endpoints-s3.html
 
 
 
+
+
+
+
+
+many site locations, collect data and have high speed internet connections
+averagedata collected in 500GB and will be analysed centrally
+aggregate data in fastest way
+
+S3 is bakle to build and retrieve any amount of data from anywhere
+is flexible
+and data type or amount
+
+data is transferred within the same REGION
+S3 Transfer Accelleration can speed u transfer
+
+multipart upload allows single object as set of pairs
+
+
+
+region replication is slower
+
+snowblledge is end-to-end transer mnot aggregation and takes a week
+
+VPN connection is just a conection
+
+
+
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html
+
+
+
+
+
+
