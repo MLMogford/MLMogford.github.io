@@ -192,6 +192,32 @@ https://aws.amazon.com/blogs/security/how-to-connect-your-on-premises-active-dir
 
 
 
+An app runs on auto Scaling group of EC2 instances, Application Load Balancer, MySQL RDS instance, in multi AZ Deployments
+
+need to protect confidential information of customers by ensuring RDS databsae can only be accessed using profile credentials specific to EC2 instances via auth token
+
+can authenticate DB instances using IAM database auth
+works with MySQL, PostgreSQL
+
+don't need a password when you connect to a DB instance, use auth token instead
+
+allows nertwork traffic from database encrypted using Secure Sockets Layer SSL
+
+
+
+if you create an IAM role, need to assign it to EC2 instance and congfigure the RDS to use IAM DB auth
+
+STS is used for temporary tokens for auth
+
+Reference:
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html
+
+
+
+
+
+
 
 
 
