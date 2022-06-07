@@ -301,6 +301,41 @@ https://docs.aws.amazon.com/fsx/latest/WindowsGuide/migrate-file-share-config-to
 
 
 
+sensitive Personally Identifyable Information PII of users stored in an S3 bucket
+
+encryption technique?
+
+Client-side encryption
+ - act of encrypting data before sending it to S3
+ to enable:
+ 1. Use an AWS key-Managed customer master key
+ 2. Use a client-side master key
+ 
+ 
+ KMS-managed master key to enable cliant-side data encryption - provide KMS master key ID to AWS
+ 
+ client side master key for client side encryption: client-side master keys and uncrypted data are never sent to AWS
+ 
+ need to safely manage encryption keys
+
+when upleading an object:
+ - S3 encryption client generated a one-time-use symmetric key locally, separate key for each object
+ - client encrypts data encryption key using master key you provide
+ - client uploads encrypted data to S3 and saves encrypted data key as object metadata
+ 
+when downloading:
+ - client downloads encrypted object from S3, using description in metadata, determines which master key to use
+
+ - >> S3 client-side encryption with client-side master key
+ 
+KMS not used because master keys should and unencrypted data shoud not be sent to AWS
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html
+
 
 
 
