@@ -186,6 +186,27 @@ https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.ht
 
 
 
+need highly available and fault tolerant architecture that processes mission critical workloads, at least 2 EC2 instances that scale to 6 instances to handle peak load
+
+EC2 autoscling, create collectins of. EC2 groups called Auto Scaling group
+
+ensures group never goes above or below group size
+
+ability to isolate resources if outage occurs, need redundant resources for fault tolerance in event of AZ outage
+
+minimum capacity to 4, so each AZ can have 2 instances running
+deploy 2 in separate AZs
+
+References:
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
+
+https://docs.aws.amazon.com/documentdb/latest/developerguide/regions-and-azs.html
+
+
+
+
+
 
 
 
