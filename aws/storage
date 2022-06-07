@@ -367,6 +367,47 @@ https://aws.amazon.com/caching/session-management/
 
 
 
+most suitable databse for data analytics deployed on auto-scaling EC2 instances using MongoDB 
+required high throughput performing small random I/O operations
+
+SSD-backed volumes, such as General Purpose SSD (gp2) and Provisioned IOPS SSD (io1), deliver consistent performance whether an I/O operation is random or sequential. HDD-backed volumes like Throughput Optimized HDD (st1) and Cold HDD (sc1) deliver optimal performance only when I/O operations are large and sequential.
+
+
+In the exam, always consider the difference between SSD and HDD as shown on the table below. This will allow you to easily eliminate specific EBS-types in the options which are not SSD or not HDD, depending on whether the question asks for a storage type which has small, random I/O operations or large, sequential I/O operations.
+
+
+SSD vs HDD
+
+small, random v large, sequential
+can be used a bootable volume vs cannot
+transactional workloads, critical business ops requiring sustained IOPS, large database workloads MongoDB, Oracle, SQL Server vs large streaming workloads consistent fast throughput at a low price, big data data warehouses, log processing, infrequently accessed
+higher cost vs low cost
+IOPS performaces vs Throughput (MiB/S)
+
+Provisioned IOPS SSD (io1) volumes are designed to meet the needs of I/O-intensive workloads, particularly database workloads, that are sensitive to storage performance and consistency. Unlike gp2, which uses a bucket and credit model to calculate performance, an io1 volume allows you to specify a consistent IOPS rate when you create the volume, and Amazon EBS delivers within 10 percent of the provisioned IOPS performance 99.9 percent of the time over a given year.
+
+
+gp, general purpose SSD - small random, less intensve workloads
+
+References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html#EBSVolumeTypes_piops
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
