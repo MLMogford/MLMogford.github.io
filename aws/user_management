@@ -203,3 +203,35 @@ ECS does not support resource-based policies, S3 does, an ECS task assumes an ex
 
 
 
+
+
+
+
+multiple apps in VPC, multiple port scans coming in from a specific IP address block, trying to connect to several AWS resources inside their VPC
+security requests all IPs denied for next 24 hours
+
+quickest and easiest method to quickly and temporarily deny access from specified IP addresses?
+
+control VPC network by using network access control list (ACL)
+optional layer of security for VPC that acts as a firewall for all traffic coming in and out of more than one subnets
+can be easily added and removed
+
+
+IAM policy does not control inbound and outbound traffic of your VPC
+
+Security Group acts as a firewall, but only inbound and outbound traffic at instance level, not whole VPC
+
+adding a firewall in the nuderlying connection is not enough, attacker can connect to another AWS resource
+
+
+
+Reference:
+
+http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html
+
+
+
+
+
+
+
