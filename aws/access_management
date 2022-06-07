@@ -218,6 +218,43 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.ht
 
 
 
+data stored in cloud should be encrypted at rest
+company requires fullc ontrol of encryption of created keys and remove key material from AWS KMS
+should be independent of CloudTrail
+
+KMS custom key store combines controls provided by CloudHSM with integration of KMS
+can configure CloudHSM cluster anf authorise KMS to use it as a dedicated key store ranther than default KMS key store
+when you create keys, generate key material in CLoud HSM cluster
+CMKs generate in custom key store never leave HSMs in Cloud HSM
+
+CloudHSM gives you option to manage lifecycle of CMKs independently of KMS
+custom key store is useful:
+ - may have keys explcityl required to be protected in a single-tenent HSM or an HSM over which you have direct control
+ - may have keysrequired to be stored in an HSM that validated to FIPS 140-2 or 3
+ - may need abikity to immediately remove key material form KMS 
+ - need to audit keys independently of KMS or CloudTrail
+ 
+can use AWS KMS to create a custom key store, store non-extractable key materials in CloudHSM
+
+S3 is not suitbale for storing encryption keys
+
+
+References:
+
+https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html
+
+https://aws.amazon.com/kms/faqs/
+
+https://aws.amazon.com/blogs/security/are-kms-custom-key-stores-right-for-you/
+
+
+
+
+
+
+
+
+
 
 
 
