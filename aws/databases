@@ -308,6 +308,21 @@ https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-datab
 
 
 
+lots of outages in AZ of RDS database instance, prevent this by enabling multi-AZ failover
+automatically creates a primary DB instance and synchronously relicates data to standby instance in diferenct Az
+
+making a snapshot does not provide immediate availability in case of AZ failure
+
+read-replica only for read-heavy workloads - asynchronous replication may not provide latest version of databse
+
+Reference:
+
+https://aws.amazon.com/rds/details/multi-az/
+
+
+
+
+
 
 
 
