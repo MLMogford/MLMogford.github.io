@@ -163,6 +163,28 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html
 
 
 
+Auto-scaling
+
+which EC2 instance will be terminated first
+
+default policy designed to ensure network architecture spans AZs evenly
+
+1. if instances are in multiple AZs, choose AZ with most instacnes and at least on instance not protected form scale -in, is more than one AZ with this number of instances, choose AZ with oldest launch config
+2. determine which unprotected instances in nselected AZ, use oldest launch config
+3. if mulitiple instances to terminate based on above, determine which unprotected instances  closest to next billing hour
+4. if more than one unprotected instance closest to next billing hour, choose one at random
+
+
+References:
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html#default-termination-policy
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html
+
+
+
+
+
 
 
 
