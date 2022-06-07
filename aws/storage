@@ -401,6 +401,35 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html
 
 
 
+on-premises data centre and cloud AWS
+require:
+durable storage backup for corperate level documents stored on-premises
+local cache provides low latency access to recently accessed data to reduce egress charges
+
+documents must be stored to and recieved from AWS via Server Message Block (SMB) protocol
+immediately accessable within 6 months, archived for another decade
+
+file gateway supports a file interfcae into S3
+combines a service and a virtual software appliance
+store and retrieve objects in S3 using industry-standard file protocols (NFS, SMB)
+the software appliance or gateway is into on-premises environment as a VM running VMware ESXi, Hyper-v or another hyper visor
+
+gateway provides access to objects in S3 as files or file share mount points
+with a file gate can:
+ - store and retrieve files directly using NFS, SMB
+ - acccess files directly in S3 from any AWS  Cloud app
+ - manage S3 using lifecycle policies, cross-region replication, versioning
+
+
+AWS Storage Gateway supports the Amazon S3 Standard, Amazon S3 Standard-Infrequent Access, Amazon S3 One Zone-Infrequent Access and Amazon Glacier storage classes. 
+
+tape gateways provide cost-effective and durable archive backup in glacier, but not retrievable immediately within minutes, doe snot create a local cache
+
+References:
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html
+
+https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html
 
 
 
