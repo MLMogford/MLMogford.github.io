@@ -127,6 +127,67 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html
 
 
 
+# is 1200 employees granted access  to S3 for storage of personal documents
+
+SSO from corporate AD or LADP directory, restricts access for each individaul to a designated user folder in an S3 bucket
+
+common scenareo for temporary credentials in AWS
+useful in scenareos that involve identity federation, deligation, cross-account access, IAM roles - 'enterprise identity federation'
+
+1. set up a Federation proxy or an Idnetity provider
+2. set up an AWS Security Token Service to generate temporary tokens
+3. configure IAM role and an IAM Policy to access the bucket
+
+within the organisation:
+ - LDAP identity store
+ - client app
+ - Portal/Identity Provider (IdP)
+ - Client app makes request to IdP
+ - IdP sends client SML assertion
+ 
+AWS:
+ - STS
+ - S3 bucket
+ - app uses credentials to access AWS resources
+ 
+SSO:
+an enterprise identity federation
+can authenticate users in organisation's network
+provide user's access to AWS without creating new AWS identities for them and requireing them to sign in with separate username and password
+
+AWS STS supports SAML 2.0
+can use with Microsoft AD FS to leverage Active Directory
+
+
+References:
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html
+
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-s3-user-specific-folder/
+
+
+
+
+give AWS Console access to developers
+
+company mandates use of identity federation adn role-based access control
+
+roles already assigned using groups in the Active Directory
+
+since company using AD, best to use AWS Directory Service AD Connector - easier integration
+
+since roles are already assigned using groups in the corporate AD, better to use IAM Roles
+
+can assign IAM Role to the users or gorups from an AD once it is integrated with VPC via AWS Directory Service AD Connector
+
+
+Reference:
+
+https://aws.amazon.com/blogs/security/how-to-connect-your-on-premises-active-directory-to-aws-using-ad-connector/
+
+
 
 
 
