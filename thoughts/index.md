@@ -6,7 +6,7 @@ comments: true
 
 image:
   feature: beijing01.jpg
-  credit: Michael Mogford - South Australia
+  credit: Michael Mogford - Beijing
   creditlink: http://mlmogford.dev/
 ---
 
