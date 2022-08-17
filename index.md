@@ -1,9 +1,9 @@
 ---
 layout: home
-excerpt: "luis custodio blog, be welcome."
-tags: [javascript, c#, blog, continuous integration, ci, automation]
+excerpt: "I'm Michael, welcome to my personal website."
+tags: [data science, machine leaning engineering, cloud architecture design, personal blog, machine learning system development, MLOps, ]
 image:
   feature: sample-image-8.jpg
-  credit: Luis Custodio - New York
-  creditlink: http://luiscustodio.com/
+  credit: Michael Mogford - Dunhuang
+  creditlink: http://mlmogford.com/
 ---
