@@ -1,13 +1,13 @@
 {
-  "name": "luiscustodio",
-  "author": "Luis Custodio <blog@luiscustodio.com>",
-  "homepage": "https://www.luiscustodio.com",
+  "name": "michaelmogford",
+  "author": "Michael Mogford <blog@mlmogford.dev>",
+  "homepage": "https://www.mlmogford.dev",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lcustodio/lcustodio.github.io.git"
+    "url": "git@github.com:mlmogford/mlmogford.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/lcustodio/lcustodio.github.io/issues"
+    "url": "https://github.com/mlmogford/mlmogford.github.io/issues"
   },
   "engines": {
     "node": ">= 0.10.0"
