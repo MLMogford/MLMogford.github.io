@@ -1,6 +1,8 @@
 ---
 layout: page
-
+title: "my professional experience"
+tags: []
+comments: true
 
 image:
   feature: adelaide01.jpg
