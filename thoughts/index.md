@@ -1,104 +1,25 @@
 ---
 layout: page
-title: "my professional experience"
+title: "my China experience"
 tags: []
 comments: true
 
 image:
-  feature: adelaide01.jpg
+  feature: beijing01.jpg
   credit: Michael Mogford - South Australia
   creditlink: http://mlmogford.dev/
 ---
 
-Michael Mogford is a Machine Learning Engineer and Data Scientist working in Adelaide, South Australia.
-
-I work in a team to develop machine learning services within a variety of domains. I focus on designing the cloud architecture, assisting with machine learning model design, and implementing pipelines that bring these ideas to reality.
-
-I have a broad range of education and work experience, from biomedical science and conducting a pilot clinical drug trial, to computer science and conducting research into medical image classification using multimodal fusion and optimising sensitivity at a set specificity with a ranking loss function I developed.
-
-I deeply value the experiences I have had travelling and living around the world. I have lived in Scotland, China and Nepal, and travelled through Europe, Asia and North America over 7 years. One highlyght was the opportunty to study at Peking University as a language student, and Tsinghua University to study my master's in computer science.  
-
-
-## Consilium Technolody  
-Jan. 2022 – Present  
-*Machine Learning Engineer, Data Scientist*  
-Creating enterprise solutions using best-practice Machine Learning engineering practices  
-Deploying and maintaining ML models in production   
-Comfortable with architecting within the AWS environment using AWS and open source resources  
-> SageMaker services  
-> AWS compute includine serverless i.e. Lambda  
-> AWS container services, Docker  
-> IaC: terraform  
-
-
-## University of Adelaide  
-
-June. 2022 – Present  
-Sciences Alumni Association  
-*Mentor*  
-
-
-Jan. 2021 – Dec. 2021  
-*Tutor*   
-Foundations in Computer Science (Master)  
-Introduction to Software Engineering (Undergrad)  
-
-
-
-
-## LBT innovations  
-Jan. 2020 – July 2020  
-*Artificial Intelligence Specialist (Intern)*  
-Data analytics, development of ESBL literature review and pilot AM, documentation to FDA standards  
-
-
-## Australian Refugee Association    
-Nov. 2013 - June 2014, Dec. 2019 - Present  
-*Homework Club Tutor, Social Support Program Volunteer*  
-
-
-# EDUCATION  
-
-## PhD in Computer Science    
-University of Adelaide, Australian Institute for Machine Learning  
-Research: A deep learning multimodal mammogram classification system for population-scale cancer screening  
-Supervisor: Professor Gustavo Carneiro  
-Achievements:   
-MRFF scholarship recipient  
-General Secretary, Early Career Researcher Committee > Primary supervisor to Jolene Loo (CS topics student)  
-
-
-## Masters in Advanced Computing  
-2019, Tsinghua University (P.R. China)  
-Knowledge Engineering Group  
-Thesis: Multimodal Breast Cancer Molecular Subtype Prediction from ultrasound images with a deep learning system  
-Supervisor: Professor Tang Jie  
-Achievements:  
-Global Innovation Exchange, Connected Devices  
-Competition, semi-finalist  
-Chinese Government and Tsinghua University Scholarships  
-
-
-## Non-degree Language Training  
-2017, Beijing Shifan University  
-School of Chinese as a Second Language Achievements:   
-Chinese Government Scholarship  
-
-
-## 2015, Peking University  
-School of Chinese as a Second Language Achievements:  
-Chinese Government Scholarship  
-2nd prize, Peking University School of Chinese as a Second Language Theatrical Competition  
-Host, Peking University School of Chinese as a Second Language Speech Competition  
-BSc (Health Science, Honours)  
-
-## 2013, University of Adelaide  
-Thesis: Effects of Minocycline on Chronic Pain Patients Receiving Opioid Treatment Supervisor: Professor Peter Catcheside  
-Australian Institute for Sleep Health, Repatriation General Hospital  
-Achievements:   
-Chief Investigator, pilot clinical drug trial for chronic  
-pain patients  
-The Repat Foundation Inc. Medical Research Scholarship  
-BSc (Biomedical Science)  
-2012, University of Adelaide  
-Core subjects: physiology, anatomy, chemistry, pharmacology.  
+## About China
+From 2014 when I began learning the Chinese language, until I finished my Master’s Degree in 2019, I lived in Beijing. It was a journey into Chinese culture and mega-city living, delicious food and travel opportunities, bureaucratic challenges and the fast pace of change. I hope to share my experiences and recommendations here as a break from my research and an opportunity to express my own thoughts and recommendations on a country that has changed my life.
+A basic understanding of China is useful as it becomes a bigger part of the world we live in. If you want to be able to contextualise what is reported in the news or to hold an informed conversation about China, or if you want to go further and have an appreciation of the history and culture while you are travelling or living there, these podcasts are the resources you need. 
+ - The Sinica podcast 
+ 	- This is a great production hosted by Kaiser Kuo and Jeremy Goldkorn has continued for over a decade. Both host this show with the background and wisdom to easily carry the conversational interviews they have that cover a vast array of topics, from the development of the tobacco industry, the self help industry and international relations. I was first introduced to this program when I was frequenting the Bridge Cafe in WuDaoKou where informative talks were held each month, I was particularly keen to attend this event because Kaiser was was to give a talk after recording an episode with my good friend Assistant Professor Eric Hendricks-Kim. 
+ - The China History Podcast
+	- Another long-running podcast of more than ten years, Laszlo Montgomery narrates tales of the many interesting periods, peoples and characters that China has seen over its long history.
+- The Three Kingdoms Podcast and The Water Margin Podcast
+	- The translated editions do not always tell the full story. John Zhu contextualises and gives an entertaining run in these audiobooks. This is his passion project and you can really feel his entheusism while he retells the English versions of a couple of the most important works of Chinese literature.
+- The Little Red Podcast
+	- A podcast hosted by an Australian academic Graeme Smith and former BBC and NPR journalist Louisa Lim. Very interesting variety of guests including academics and high profile guests. Overall, it is a very critical podcast, bordering on negative.
+- GuShi FM
+	- For those with intermediate to advanced Chinese language skills, this is a series of every-day stories recorded by local Chinese, similar to This American Life, but with less curation and input from the host AiZhi, the frequency of episodes means there will be something for everyone.
