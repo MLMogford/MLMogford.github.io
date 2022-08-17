@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "my China experience"
 tags: []
 comments: true
