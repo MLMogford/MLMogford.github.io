@@ -1,6 +1,5 @@
 ---
 layout: page
-title: my professional experience
 
 
 image:
