@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            const blog = [...posts]
+title:            MLMogford
 locale:           en_US
-url:              https://luiscustodio.com
+url:              https://mlmogford.dev
 #url:
 
 # Jekyll configuration
@@ -20,18 +20,18 @@ gems:
 
 # Site owner
 owner:
-  name: Luis Custodio
-  avatar: bio-photo.jpg
-  bio: "A automation oriented developer, travelling the world"
-  email: blog@luiscustodio.com
+  name: Michael Mogford
+  avatar: bio-photo.jpeg
+  bio: "ML engineer and data scientist, working in th cloud"
+  email: blog@mlmogford.com
   disqus-shortname:
-  twitter: lfcustodio
+  twitter: mlmogford
   facebook:
   google:
     analytics: 'UA-43220470-1'
   bing-verify:
-  github: lcustodio
-  stackoverflow: 139637/custodio
+  github: mlmogford
+  #stackoverflow: 139637/custodio
   linkedin: #username
   xing: #username
   instagram: #username
