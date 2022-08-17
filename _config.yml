@@ -21,8 +21,8 @@ gems:
 # Site owner
 owner:
   name: Michael Mogford
-  avatar: bio-photo.jpeg
-  bio: "ML engineer and data scientist, working in th cloud"
+  avatar: bio-photo.jpg
+  bio: "ML engineer and data scientist, working in the cloud"
   email: blog@mlmogford.com
   disqus-shortname:
   twitter: mlmogford
