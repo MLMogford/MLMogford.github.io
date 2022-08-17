@@ -8,7 +8,7 @@ comments: true
 image:
   feature: adelaide01.jpg
   credit: Michael Mogford - South Australia
-  creditlink: http://mlmofdord.dev/
+  creditlink: http://mlmogford.dev/
 ---
 
 Michael Mogford is a Machine Learning Engineer and Data Scientist working in Adelaide, South Australia.
