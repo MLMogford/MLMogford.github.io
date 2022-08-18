@@ -1,5 +1,5 @@
 ---
-layout: page-index
+layout: page
 title: Collection of misc essays
 excerpt: "A List of Misc Essays"
 
