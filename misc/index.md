@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: page-index
 title: All Misc Posts
 excerpt: "A List of Misc Posts"
 
