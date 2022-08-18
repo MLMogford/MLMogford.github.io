@@ -9,3 +9,12 @@ image:
   credit: Michael Mogford - Annapurna
   creditlink: http://mlmogford.dev/
 ---
+
+
+## Machine Learning
+
+[Machine Learning Opportunities](ml/machine-learning-opportunities)
+
+
+
+[home](./)
