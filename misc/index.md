@@ -14,7 +14,7 @@ image:
 
 ## Machine Learning
 
-[Machine Learning Opportunities](ml/machine-learning-opportunities)
+[Machine Learning Opportunities](./ml/machine-learning-opportunities)
 
 
 
