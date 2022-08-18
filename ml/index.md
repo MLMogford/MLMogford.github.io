@@ -1,5 +1,5 @@
 ---
-layout: ml-index
+layout: posts-index
 title: All ML Posts
 excerpt: "A List of ML Posts"
 ---
