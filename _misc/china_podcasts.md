@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "my China experience"
 excerpt: "Things I do to keep up with China developments while I'm away"
 tags: [padcasts, books, China]
