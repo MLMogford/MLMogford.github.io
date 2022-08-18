@@ -1,7 +1,7 @@
 ---
 layout: page-index
-title: All Misc Posts
-excerpt: "A List of Misc Posts"
+title: Collection of misc essays
+excerpt: "A List of Misc Essays"
 
 
 image:
