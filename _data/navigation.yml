@@ -3,11 +3,11 @@
 - title: About
   url: /about/
 
-- title: Posts
+- title: ML Posts
   url: /posts/
   
-- title: Thoughts
-  url: /thoughts/
+- title: Misc
+  url: /misc_posts/
   
 #- title: Stackoverflow
 #  url: http://stackoverflow.com/users/139637/custodio
