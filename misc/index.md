@@ -2,7 +2,8 @@
 layout: page
 title: Collection of misc essays
 excerpt: "A List of Misc Essays"
-
+tags: [padcasts, books, China]
+comments: true
 
 image:
   feature: nepal01.jpg
