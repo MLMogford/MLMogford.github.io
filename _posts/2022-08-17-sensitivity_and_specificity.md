@@ -6,6 +6,8 @@ tags: [ranking loss, AUROC]
 comments: true
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ## The Receiver Operating Characteristic curve
 
 The Area Under the Receiver Operating Characteristic (ROC) curve is used as a core metric to measure the effectiveness of machine learning classificationn models. The ROC curve [1] plots at every threshold the test’s Sensitivity (the proportion of positive samples that are correctly classified), against the Specificity(the proportion of negative samples that are correctly classified).  
