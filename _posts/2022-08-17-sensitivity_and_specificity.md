@@ -14,8 +14,8 @@ In a situation where there is a large class imbalance, for example many negative
 
 Conversely, Sensitivity is the reason for the program’s existence, and the maximum number of cases should be diagnosed as early as possible to to allow the person the greatest change of effective treatment and recovery. This compromise between Sensitivity and Specificity is intrinsic to all screening programs. It is important to know the strengths and weaknesses of a system, and the ROC curve provides a visual indicator of whose components can be quantified, as illustrated in figure 1.
 
-<img src="https://github.com/MLMogford/MLMogford.github.io/tree/main/images/ROC.png" alt="ROC curve" width=50% height=50%>
-<img src="https://github.com/MLMogford/MLMogford.github.io/tree/main/images/zeroOne.png" alt="zero one loss" width=50% height=50%>
+<img src="https://github.com/MLMogford/MLMogford.github.io/images/ROC.png" alt="ROC curve" width=50% height=50%>
+<img src="https://github.com/MLMogford/MLMogford.github.io/images/zeroOne.png" alt="zero one loss" width=50% height=50%>
 
 <!-- ![ROC curve](/images/ROC.png)
 ![zero one loss](/images/zeroOne.png) -->
