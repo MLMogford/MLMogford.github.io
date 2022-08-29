@@ -20,11 +20,11 @@ Deep learning models demonstrate outstanding performance in complex pattern reco
 
 Optimising for AUC related metrics can be difficult as it involves ranking positive instances against negative instances in the whole population. An estimator for the AUC is the Wilcoxon Mann Whitney (WMW) statistic [6], which ranks instances in the training sample using the step function. However, the WMW statistic is inappropriate as a loss function because the step function is non-differentiable. Additionally, the requirement for exhaustive ranking means that batch training with stochastic gradient descent [7] is inadequate, as it does not allow for the comparison between instances across different batches, i.e. it is non-decomposable. Previous work circumvents the non-differentiable and non-decomposable problems by using a surrogate loss that ranks instances against a threshold [8]. In this paper, we extend on previous work and introduce a constrained optimisation objective that maximise Sensitivity and Specificity at a given threshold. Experimental results show that the proposed method improves the model’s Sensitivity at a set threshold over the Binary Cross Entropy (BCE) loss baseline.
 
-*Examples of AUC optimisation in the past*
+##Examples of AUC optimisation in the past##
 AUC = E(π+ > π−)
 
 
-$AUC = E(\pi_+ > \pi_-)$
+$$AUC = E(\pi_+ > \pi_-)$$
 
 where $E(.)$ denotes the expectation over the data distribution.
 The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
