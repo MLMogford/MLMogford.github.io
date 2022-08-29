@@ -16,6 +16,8 @@ Conversely, Sensitivity is the reason for the program’s existence, and the max
 
 ![ROC curve](/images/ROC.png)
 
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 Deep learning models demonstrate outstanding performance in complex pattern recognition tasks [3] and can be applied to radiology screening. If a ML model can perform to the standard of human readers, its integration into the breast cancer screening workflow can alleviate the resource burden without sacrificing performance [4]. However, the standard metric for machine learning performance is the Area Under the ROC curve (AUC). The AUC cannot be used to compare machine performance against that of a human, which is often not measured in AUC. In many cases, evaluation is made by choosing a decision threshold such that the model’s Specificity matches with human’s Specificity, and comparing between reader’s Sensitivity and model’s Sensitivity at the chosen threshold [5]. Under this evaluation procedure, Machine Learning models typically fall short of the human level Sensitivity. As such, it may be beneficial to improve the model’s performance by having an objective function that takes into account this evaluation procedure. This can be achieved by either optimising for the AUC directly, or to optimise for a model’s performance at a specific operating point.  
 
