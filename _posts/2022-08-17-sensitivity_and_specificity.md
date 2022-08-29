@@ -78,7 +78,7 @@ This formulation serves as a foundation for our adapta- tion of the objective fu
 
 ##Sensitivity@Specificity formulation
 
-Based on the definitions of true positive (tp) and false pos- itive (fp) in [8], their work, based on Sensitivity at a target Precision can be extended to the form relevant to the cancer screening problem outlined earlier. The Sensitivity at a set Specificity loss was derived as shown below.
+Based on the definitions of true positive (tp) and false positive (fp) in [8], their work, based on Sensitivity at a target Precision can be extended to the form relevant to the cancer screening problem outlined earlier. The Sensitivity at a set Specificity loss was derived as shown below.
 Sensitivity@Specificity
 
 
@@ -139,9 +139,11 @@ is equivalent to
   
       \[st.  \dfrac {fp} {{|Y^{-}|}} (FPR) < \dfrac{fp^{u}}{|Y^{+}| }< \alpha \leftrightarrow st.  \dfrac {\mathcal{L}^{-}} {{|Y^{-}|}} < \alpha \leftrightarrow \mathcal{L}^{-} < |Y^{-}|\]
 
-
+{% endraw %}
 
 Hence the objective is:
+
+     {% raw %}
 
 \[ \min \dfrac {\mathcal{L}^{+}} {{|Y^{+}|}}\]
    
@@ -152,6 +154,8 @@ Hence the objective is:
 and the loss function can be calculated by
 
 \[L = \dfrac {\mathcal{L}^{+}}{{|Y^{+}|}} + \gamma (\mathcal{L}^{-} - \alpha {|Y^{-}|})\] \[\leftrightarrow L = \mathcal{L}^{+} + \gamma \mathcal{L}^{-}|Y^{-}| - \gamma{|Y^{+}|}{|Y^{-}|\alpha}\]
+
+{% endraw %}
 
 This loss function can replace BCE loss to adjust a model's performance to achieve the objective set out in this work, maximising Sensitivity at a set Specificity.
 
@@ -176,6 +180,7 @@ Ranking loss
 Binary Cross Entropy to to Log Ratio
 
 
+ {% raw %}
 \[-\{\sum y_{i}\log p (p(y_{i}=1|x_{i})) + (1-y_{i}\log p(y_{i}=0|x_{i})\}\]
 
 represents approximately $p(\centerdot |x), \text{using a neural net } ~ \hat{p}(|x)$
@@ -229,6 +234,8 @@ Decomposable
 
 
 \[threshold<p^{+}\rightarrow\dfrac{threshold}{p^{+}}<1, log(...)<0\]
+
+{% endraw %}
 
   
   References
