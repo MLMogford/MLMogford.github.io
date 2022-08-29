@@ -6,7 +6,6 @@ tags: [ranking loss, AUROC]
 comments: true
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 ## The Receiver Operating Characteristic curve
 
@@ -63,9 +62,8 @@ and Y +, Y − denote the positive and negative class respectively, and pi = p(x
 ![zero one loss](/images/zeroOne.png)
 
 
-{% raw %}
+
 $\ell(\theta) = \sum_{i \in Y^+} \sum_{j \in Y^-} \max \{0, (p_i(\theta) - p_j(\theta)  \}$
-{% endraw %}
 
 Despite the objective function being differentiable, it does not often work well in large datasets due to the non-decomposable nature of the objective, which restricts the effectiveness of batch training.
 
