@@ -34,7 +34,7 @@ where E(.) denotes the expectation over the data distribution.
 The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
 
 <div>
-$$\hat{AUC} = \sum_{i \in Y^+}\sum_{j \in Y^-} 1_{\{p_i > p_j \}}$$
+$\hat{AUC} = \sum_{i \in Y^+}\sum_{j \in Y^-} 1_{\{p_i > p_j \}}$
 </div>
 
 
