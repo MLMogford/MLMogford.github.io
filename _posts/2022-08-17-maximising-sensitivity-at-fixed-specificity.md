@@ -16,9 +16,7 @@ Conversely, Sensitivity is the reason for the program’s existence, and the max
 
 ![ROC curve](/images/ROC.png)
 
-<img src="https:/images/ROC.png" width="200">
 
-<!-- [[https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png|width=100px]] -->
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
 
@@ -38,19 +36,21 @@ where E(.) denotes the expectation over the data distribution.
 
 The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
 
-![1wmw](/images/equations/1wmw-stat.png)
+<!-- ![1wmw](/images/equations/1wmw-stat.png) -->
+<img src="https:/images/equations/1wmw-stat.png" width="200">
 
 
 where. 
 
-![2wmw-stat](/images/equations/2wmw-stat.png)
-
+<!-- ![2wmw-stat](/images/equations/2wmw-stat.png) -->
+<img src="https:/images/equations/2wmw-stat.png" width="200">
 
 
 and Y +, Y − denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
 
-![3hinge](/images/equations/3hinge.png)
+<!-- ![3hinge](/images/equations/3hinge.png) -->
+<img src="https:/images/equations/3hinge.png" width="200">
 
 ![zero one loss](/images/zeroOne.png)
 
@@ -62,10 +62,12 @@ Despite the objective function being differentiable, it does not often work well
 As a way to circumvent the non-decomposable issue, [8] restricts the ranking to a particular threshold and optimises Sensitivity and Precision using a lower and upper bound surrogates
 
 
-![4tp-and-fp](/images/equations/4tp-and-fp.png)
+<!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
+![3hinge](/images/equations/4tp-and-fp.png)
 where $b$ is the chosen threshold and  
 
-![5tp-and-fp](/images/equations/5tp-and-fp.png)
+<!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
+![3hinge](/images/equations/5tp-and-fp.png)
 
 
 
@@ -84,9 +86,11 @@ Sensitivity@Specificity
 b : the threshold at which the classification should be made
 
 
-![6-send-and-spec](/images/equations/6-send-and-spec.png)
+<!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
+![3hinge](/images/equations/6-send-and-spec.png)
 
-![7-send-spec](/images/equations/7-send-spec.png)
+<!-- ![7-send-spec](/images/equations/7-send-spec.png) -->
+![3hinge](/images/equations/7-send-spec.png)
 
 
 
@@ -95,7 +99,8 @@ Given the previous definitions:
  
 it is known that
  
-![ 8-sens-spec](/images/equations/8-sens-spec.png)
+<!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
+![3hinge](/images/equations/8-sens-spec.png)
 
 
 
@@ -128,21 +133,24 @@ Ranking loss
 Binary Cross Entropy to to Log Ratio
 
 
-![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png)
+<!-- ![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png) -->
+![3hinge](/images/equations/9-bce-to-log-ratio.png)
 
 
 
 Non-Decomposable (requires a memory bank or large batch size)
 
 
-![10-non-decomposable-formulation](/images/equations/10-non-decomposable-formulation.png)
+<!-- ![10-non-decomposable-formulation](/images/equations/10-non-decomposable-formulation.png) -->
+![3hinge](/images/equations/10-non-decomposable-formulation.png)
 
 
 
 Decomposable
 
 
-![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png)
+<!-- ![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png) -->
+![3hinge](/images/equations/11-decomposable-formulation.png)
 
 
 ##References  
