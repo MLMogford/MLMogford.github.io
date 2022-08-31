@@ -33,31 +33,22 @@ where E(.) denotes the expectation over the data distribution.
 
 The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
 
-<div>
-$\hat{AUC} = \sum_{i \in Y^+}\sum_{j \in Y^-} 1_{\{p_i > p_j \}}$
-</div>
+![1wmw](/images/equations/1wmw-stat.png)
 
 
 where. 
 
-{% raw %}
-$1_{\{p_i > p_j\}} = 
-    \begin{cases}
-        1, &\text{if } p_i > p_j\\
-        0, &\text{otherwise}
-    \end{cases}$
-{% endraw %}. 
+![2wmw-stat](/images/equations/2wmw-stat.png)
+
 
 
 and Y +, Y − denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
 
+![3hinge](/images/equations/3hinge.png)
 
 ![zero one loss](/images/zeroOne.png)
 
-
-
-$\ell(\theta) = \sum_{i \in Y^+} \sum_{j \in Y^-} \max \{0, (p_i(\theta) - p_j(\theta)  \}$
 
 Despite the objective function being differentiable, it does not often work well in large datasets due to the non-decomposable nature of the objective, which restricts the effectiveness of batch training.
 
@@ -66,26 +57,11 @@ Despite the objective function being differentiable, it does not often work well
 As a way to circumvent the non-decomposable issue, [8] restricts the ranking to a particular threshold and optimises Sensitivity and Precision using a lower and upper bound surrogates
 
 
-{% raw %}
-$tp(b) = \sum_{i\in{Y^+}}{1_{\{p_i\geq{b}\}}} \geq \sum_{i\in{Y^+}}{1-l_{n}(p,x_{i},y_{i})}$
-{% endraw %}
-
-
-{% raw %}
-$fp(b) = \sum_{i\in{Y^-}}{1_{\{p_i\geq{b}\}}} \leq \sum_{i\in{Y^+}}{l_{n}(p,x_{i},y_{i})}$
-{% endraw %}  
-
-
+![4tp-and-fp](/images/equations/4tp-and-fp.png)
 where $b$ is the chosen threshold and  
 
+![5tp-and-fp](/images/equations/5tp-and-fp.png)
 
-{% raw %}
-$l_{n}(p,x_i,y_i) = 
-    \begin{cases}
-        \max(0,1-(p_i-b) & \text{if } i \in Y^+\\
-        \max(0,1+(p_i-b) & \text{otherwise}\\
-    \end{cases}$
-{% endraw %}  
 
 
 This formulation serves as a foundation for our adaptation of the objective function that maximises Sensitivity at a chosen Specificity.  
@@ -102,72 +78,27 @@ Sensitivity@Specificity
 α : the target specificity
 b : the threshold at which the classification should be made
 
-{% raw %}
-$\alpha$ : the target specificity
 
-$b$ : the threshold at which the classification should be made
+![6-send-and-spec](/images/equations/6-send-and-spec.png)
 
-|Y −| = total number of negatives
+![7-send-spec](/images/equations/7-send-spec.png)
 
 
-$\mathcal{L}^{-} = \text{false positives}$
-
-$|Y^{+}| = \text{total number of positives}$
-
-$\mathcal{L}^{+} = |Y^{+}| - \text{tp (all positives covered by the model)}$
-
-
-
-$\max \dfrac{tp(f)}{|Y^{+}|} (Sensitivity)$
-
-$st. TNR(Specificity)} > 1-\alpha$
-
-
-is equivalent to 
-
-$\max \dfrac{tp(f)}{|Y^{+}|}$
-
-$st. \dfrac{fp(f)}{|Y^{-}|} < \alpha \leftrightarrow FPR<\alpha$
 
 
 Given the previous definitions:
  
 it is known that
  
- 
-$tp (f) \geq{tp^{l}(f)} =|Y^{+}| - \mathcal{L}^{+}$
+![ 8-sens-spec](/images/equations/8-sens-spec.png)
 
-
-$fp (f) \leq{fp^{u}(f)} = \mathcal{L}^{-}$
-   
-   
-   
-   
-substitute a new objective:
-   
-
-$^{\max}_{f}  \dfrac {tp_{l}(f)} {{|Y^{+}|}} (TPR) \leftrightarrow ^{\max}_{f}  \dfrac {|Y^{+}|-\mathcal{L^{+}}} {{|Y^{+}|}} = 1-\dfrac{\mathcal{L}^{+}}{|Y^{+}|}$
-  
-  
-$st.  \dfrac {fp} {{|Y^{-}|}} (FPR) < \dfrac{fp^{u}}{|Y^{+}| }< \alpha \leftrightarrow st.  \dfrac {\mathcal{L}^{-}} {{|Y^{-}|}} < \alpha \leftrightarrow \mathcal{L}^{-} < |Y^{-}|$
-
-{% endraw %}
-
-Hence the objective is:
-
-{% raw %}
-
-$\min \dfrac {\mathcal{L}^{+}} {{|Y^{+}|}}$
-   
-   
-$st.  \mathcal{L}^{-} -  \alpha {{|Y^{-}|}} < 0$
 
 
 and the loss function can be calculated by
 
-$L = \dfrac {\mathcal{L}^{+}}{{|Y^{+}|}} + \gamma (\mathcal{L}^{-} - \alpha {|Y^{-}|})\] \[\leftrightarrow L = \mathcal{L}^{+} + \gamma \mathcal{L}^{-}|Y^{-}| - \gamma{|Y^{+}|}{|Y^{-}|\alpha}$
 
-{% endraw %}
+
+
 
 This loss function can replace BCE loss to adjust a model's performance to achieve the objective set out in this work, maximising Sensitivity at a set Specificity.
 
@@ -192,63 +123,22 @@ Ranking loss
 Binary Cross Entropy to to Log Ratio
 
 
-{% raw %}
-$\{\sum y_{i}\log p (p(y_{i}=1|x_{i})) + (1-y_{i}\log p(y_{i}=0|x_{i})\}$
+![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png)
 
-represents approximately $p(\centerdot |x), \text{using a neural net } ~ \hat{p}(|x)$
 
-maximum likelihood
-$\Pi p(y=i|x)^{y}p(y=0|x)^{1-y}$
-
-$log\Pi (...) =\sum \log (p(y=1|x)^{y} p(y=0|x)^{1-y}$
-
-\[=\sum y \log (p(y|x)^{y} + (1-y) \log (p(y=0|x))$
-
-$= \{ - \sum_{x \in y^{+}} \log(p(y=1|x)) + \sum \log(1-p(y=1|x)) \}$
-
-$p(y=1|x) \text{ as }p$
-
-$- \{ \sum \log p^{+} + \sum \log (1-p^{-}) \}\]
-
-$max\log(1-p) \leftrightarrow 1-p
-${eq min } p-p(y=1|x \in y^{-})
-$ \log(p^{-})
-
-$\sum\log(p^{+}) - \sum\log (p^{-})$
-
-$= log(\dfrac{p^{+}}{p^{-}})$
 
 Non-Decomposable (requires a memory bank or large batch size)
 
-$log(\dfrac{p^{+}}{p^{-}}) \approx AUC$
 
-$\text{max}(log^{+} - log^{-})$
-
-$\text{max}(log^{-} - log^{+})$
-
-$\text{max}(log(\dfrac{p^{-}}{p^{+}}))$
-
-
-$\text{if } p^{-} < p^{+} -> \text{all correct} = 0$
+![10-non-decomposable-formulation](/images/equations/10-non-decomposable-formulation.png)
 
 
 
 Decomposable
 
-$log(\dfrac{threshold}{p^{+}})$
-$log(\dfrac{p^{-}}{threshold})$
 
-$\dfrac{p^{-}}{threshold}<1log<0$
+![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png)
 
-$\dfrac{threshold>p^{+}}{threshold<p^{-}}$
-
-
-
-
-$threshold<p^{+}\rightarrow\dfrac{threshold}{p^{+}}<1, log(...)<0$
-
-
-{% endraw %}
 
 ##References  
 
