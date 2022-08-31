@@ -63,11 +63,12 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
-![3hinge](/images/equations/4tp-and-fp.png)
+<img src="https:/images/equations/4tp-and-fp.png" width="200">
+
 where $b$ is the chosen threshold and  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
-![3hinge](/images/equations/5tp-and-fp.png)
+<img src="https:/images/equations/5tp-and-fp.png" width="200">
 
 
 
@@ -87,11 +88,10 @@ b : the threshold at which the classification should be made
 
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
-![3hinge](/images/equations/6-send-and-spec.png)
+<img src="https:/images/equations/6-send-and-spec.png" width="200">
 
 <!-- ![7-send-spec](/images/equations/7-send-spec.png) -->
-![3hinge](/images/equations/7-send-spec.png)
-
+<img src="https:/images/equations/7-send-spec.png" width="200">
 
 
 
@@ -100,7 +100,8 @@ Given the previous definitions:
 it is known that
  
 <!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
-![3hinge](/images/equations/8-sens-spec.png)
+<img src="https:/images/equations/8-sens-spec.png" width="200">
+
 
 
 
@@ -134,7 +135,7 @@ Binary Cross Entropy to to Log Ratio
 
 
 <!-- ![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png) -->
-![3hinge](/images/equations/9-bce-to-log-ratio.png)
+<img src="https:/images/equations/9-bce-to-log-ratio.png" width="200">
 
 
 
@@ -142,7 +143,7 @@ Non-Decomposable (requires a memory bank or large batch size)
 
 
 <!-- ![10-non-decomposable-formulation](/images/equations/10-non-decomposable-formulation.png) -->
-![3hinge](/images/equations/10-non-decomposable-formulation.png)
+<img src="https:/images/equations/10-non-decomposable-formulation.png" width="200">
 
 
 
@@ -150,7 +151,7 @@ Decomposable
 
 
 <!-- ![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png) -->
-![3hinge](/images/equations/11-decomposable-formulation.png)
+<img src="https:/images/equations/11-decomposable-formulation.png" width="200">
 
 
 ##References  
