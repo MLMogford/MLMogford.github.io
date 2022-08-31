@@ -16,7 +16,7 @@ Conversely, Sensitivity is the reason for the program’s existence, and the max
 
 ![ROC curve](/images/ROC.png)
 
-img src="https:///images/ROC.png" width="200"
+<img src="https:///images/ROC.png" width="200">
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
 
