@@ -1,8 +1,8 @@
-<!-- ---
+---
 layout: page
-title: Collection of misc essays
-excerpt: "A List of Misc Essays"
-tags: [padcasts, books, China]
+title:  
+excerpt: " "
+tags: [ ]
 comments: true
 
 image:
@@ -12,5 +12,5 @@ image:
 ---
 
 
-## Machine Learning
- -->
+##  
+
