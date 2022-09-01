@@ -59,18 +59,18 @@ The AUC, as a common measure for most medical imaging problems, can be formulate
 
 &nbsp;   
 
-and _Y +_, _Y −_ denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
+and _Y +_, _Y −_ denote the positive and negative class respectively, and _pi = p(xi)_ denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
 &nbsp;  
 
 
 <!-- ![3hinge](/images/equations/3hinge.png) -->
-&nbsp;<img src="https:/images/equations/3hinge.png" width="200">
+&nbsp;<img src="https:/images/equations/3hinge.png" width="300">
 
 &nbsp;  
 
 <!-- ![zero one loss](/images/zeroOne.png) -->
-&nbsp;<img src="https:/images/zeroOne.png" width="550">
+&nbsp;<img src="https:/images/zeroOne.png" width="400">
 
 &nbsp;  
 
@@ -85,7 +85,7 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
-&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="400">
+&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="250">
 
 &nbsp;  
 
@@ -94,7 +94,7 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
-&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="400">
+&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="300">
 
 
 
@@ -116,12 +116,12 @@ Sensitivity@Specificity
 &nbsp;  
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
-&nbsp;<img src="https:/images/equations/6-send-and-spec.png" width="200">
+&nbsp;<img src="https:/images/equations/6-send-and-spec.png" width="250">
 
 &nbsp;  
 
 <!-- ![7-send-spec](/images/equations/7-send-spec.png) -->
-&nbsp;<img src="https:/images/equations/7-send-spec.png" width="400">
+&nbsp;<img src="https:/images/equations/7-send-spec.png" width="350">
 
 &nbsp;  
 
@@ -132,7 +132,7 @@ it is known that
 &nbsp;  
 
 <!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
-&nbsp;<img src="https:/images/equations/8-sens-spec.png" width="400">
+&nbsp;<img src="https:/images/equations/8-sens-spec.png" width="350">
 
 
 &nbsp;  
@@ -149,7 +149,7 @@ This loss function can replace BCE loss to adjust a model's performance to achie
 
 
 
-For the Sensitivity at Specificity to work, $\alpha$ is the inverse of the desired Specificity, $\gamma$ is a hyperparameter that requires tuning, and threshold is the threshold that is given by the post-test analysis to achieve a 96\% Specificity.  
+For the Sensitivity at Specificity to work, α is the inverse of the desired Specificity, γ is a hyperparameter that requires tuning, and threshold is the threshold that is given by the post-test analysis to achieve a 96% Specificity.  
 
 
 
@@ -171,7 +171,7 @@ Binary Cross Entropy to Log Ratio
 &nbsp;  
 
 <!-- ![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png) -->
-&nbsp;<img src="https:/images/equations/9-bce-to-log-ratio.png" width="200">
+&nbsp;<img src="https:/images/equations/9-bce-to-log-ratio.png" width="300">
 
 &nbsp;  
 
@@ -192,7 +192,7 @@ Binary Cross Entropy to Log Ratio
 &nbsp;  
 
 <!-- ![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png) -->
-&nbsp;<img src="https:/images/equations/11-decomposable-formulation.png" width="200">
+&nbsp;<img src="https:/images/equations/11-decomposable-formulation.png" width="300">
 
 &nbsp;  
 
