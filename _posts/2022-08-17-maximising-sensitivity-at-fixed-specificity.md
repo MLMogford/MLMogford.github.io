@@ -16,7 +16,7 @@ Conversely, Sensitivity is the reason for the program’s existence, and the max
 
 <!-- ![ROC curve](/images/ROC.png) -->
 
-<img src="https:/images/ROC.png" width="600">
+<img src="https:/images/ROC.png" width="300">
 
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
@@ -32,7 +32,9 @@ The AUC, as a common measure for most medical imaging problems, can be formulate
 
 _AUC = E(π+ > π−)_,   
 
-&nbsp&nbsp&nbsp  
+&nbsp;  
+&nbsp;  
+&nbsp;  
 
 where E(.) denotes the expectation over the data distribution.  
 
@@ -58,25 +60,37 @@ The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
 
 and _Y +_, _Y −_ denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
+&nbsp;  
+
 
 <!-- ![3hinge](/images/equations/3hinge.png) -->
 <img src="https:/images/equations/3hinge.png" width="400">
 
+&nbsp;  
+
 <!-- ![zero one loss](/images/zeroOne.png) -->
 <img src="https:/images/zeroOne.png" width="800">
 
+&nbsp;  
 
 Despite the objective function being differentiable, it does not often work well in large datasets due to the non-decomposable nature of the objective, which restricts the effectiveness of batch training.
+
+&nbsp;  
 
 
 ## Training with Optimisation Constraints
 As a way to circumvent the non-decomposable issue, [8] restricts the ranking to a particular threshold and optimises Sensitivity and Precision using a lower and upper bound surrogates
 
+&nbsp;  
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
 <img src="https:/images/equations/4tp-and-fp.png" width="400">
 
+&nbsp;  
+
 where $b$ is the chosen threshold and  
+
+&nbsp;  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
 <img src="https:/images/equations/5tp-and-fp.png" width="400">
@@ -93,32 +107,40 @@ Based on the definitions of true positive (tp) and false positive (fp) in [8], t
 Sensitivity@Specificity  
 
 
+&nbsp;  
 
 α : the target specificity
 _b_ : the threshold at which the classification should be made
 
+&nbsp;  
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
 <img src="https:/images/equations/6-send-and-spec.png" width="200">
 
+&nbsp;  
+
 <!-- ![7-send-spec](/images/equations/7-send-spec.png) -->
 <img src="https:/images/equations/7-send-spec.png" width="400">
 
-
+&nbsp;  
 
 Given the previous definitions:
  
 it is known that
- 
+
+&nbsp;  
+
 <!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
 <img src="https:/images/equations/8-sens-spec.png" width="400">
 
 
+&nbsp;  
 
 
 and the loss function can be calculated by
 
 
+&nbsp;  
 
 
 
@@ -138,32 +160,40 @@ It has been shown that ranking with a surrogate hinge loss is effective for maxi
 
 
 
+&nbsp;  
 
 
-Ranking loss
+## Ranking loss
 
 Binary Cross Entropy to to Log Ratio
 
+&nbsp;  
 
 <!-- ![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png) -->
 <img src="https:/images/equations/9-bce-to-log-ratio.png" width="200">
 
+&nbsp;  
 
 
-Non-Decomposable (requires a memory bank or large batch size)
+**Non-Decomposable** (requires a memory bank or large batch size)
+
+&nbsp;  
 
 
 <!-- ![10-non-decomposable-formulation](/images/equations/10-non-decomposable-formulation.png) -->
 <img src="https:/images/equations/10-non-decomposable-formulation.png" width="200">
 
+&nbsp;  
 
 
-Decomposable
+**Decomposable**
 
+&nbsp;  
 
 <!-- ![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png) -->
 <img src="https:/images/equations/11-decomposable-formulation.png" width="200">
 
+&nbsp;  
 
 ##References  
 
