@@ -16,7 +16,7 @@ Conversely, Sensitivity is the reason for the program’s existence, and the max
 
 <!-- ![ROC curve](/images/ROC.png) -->
 
-<img src="https:/images/ROC.png" width="300">
+<img src="https:/images/ROC.png" width="450">
 
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
@@ -64,12 +64,12 @@ and _Y +_, _Y −_ denote the positive and negative class respectively, and pi =
 
 
 <!-- ![3hinge](/images/equations/3hinge.png) -->
-<img src="https:/images/equations/3hinge.png" width="400">
+<img src="https:/images/equations/3hinge.png" width="200">
 
 &nbsp;  
 
 <!-- ![zero one loss](/images/zeroOne.png) -->
-<img src="https:/images/zeroOne.png" width="800">
+<img src="https:/images/zeroOne.png" width="550">
 
 &nbsp;  
 
