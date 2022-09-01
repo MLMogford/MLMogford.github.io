@@ -40,17 +40,16 @@ The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
 <img src="https:/images/equations/1wmw-stat.png" width="200">
 
 
-where. 
 
 <!-- ![2wmw-stat](/images/equations/2wmw-stat.png) -->
-<img src="https:/images/equations/2wmw-stat.png" width="200">
+<img src="https:/images/equations/2wmw-stat.png" width="300">
 
 
 and Y +, Y − denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
 
 <!-- ![3hinge](/images/equations/3hinge.png) -->
-<img src="https:/images/equations/3hinge.png" width="200">
+<img src="https:/images/equations/3hinge.png" width="400">
 
 ![zero one loss](/images/zeroOne.png)
 
@@ -58,17 +57,17 @@ and Y +, Y − denote the positive and negative class respectively, and pi = p(x
 Despite the objective function being differentiable, it does not often work well in large datasets due to the non-decomposable nature of the objective, which restricts the effectiveness of batch training.
 
 
-##Training with Optimisation Constraints
+## Training with Optimisation Constraints
 As a way to circumvent the non-decomposable issue, [8] restricts the ranking to a particular threshold and optimises Sensitivity and Precision using a lower and upper bound surrogates
 
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
-<img src="https:/images/equations/4tp-and-fp.png" width="200">
+<img src="https:/images/equations/4tp-and-fp.png" width="400">
 
 where $b$ is the chosen threshold and  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
-<img src="https:/images/equations/5tp-and-fp.png" width="200">
+<img src="https:/images/equations/5tp-and-fp.png" width="400">
 
 
 
@@ -84,14 +83,14 @@ Sensitivity@Specificity
 
 
 α : the target specificity
-b : the threshold at which the classification should be made
+*b* : the threshold at which the classification should be made
 
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
 <img src="https:/images/equations/6-send-and-spec.png" width="200">
 
 <!-- ![7-send-spec](/images/equations/7-send-spec.png) -->
-<img src="https:/images/equations/7-send-spec.png" width="200">
+<img src="https:/images/equations/7-send-spec.png" width="400">
 
 
 
@@ -100,7 +99,7 @@ Given the previous definitions:
 it is known that
  
 <!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
-<img src="https:/images/equations/8-sens-spec.png" width="200">
+<img src="https:/images/equations/8-sens-spec.png" width="400">
 
 
 
