@@ -30,24 +30,25 @@ Optimising for AUC related metrics can be difficult as it involves ranking posit
 
 The AUC, as a common measure for most medical imaging problems, can be formulated as a ranking problem, in which it measures the expectation of drawing positive instances that are ranked higher than negative instances using some ranking functions _π : X → [0, 1]_:
 
-_AUC = E(π+ > π−)_,   
+&nbsp;  
+
+&nbsp;_AUC = E(π+ > π−)_,   
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
-where E(.) denotes the expectation over the data distribution.  
+&nbsp;where _E(.)_ denotes the expectation over the data distribution.  
 
 &nbsp;   
 
-The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:  
+&nbsp;The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:  
 
 
 &nbsp;  
 
 
 <!-- ![1wmw](/images/equations/1wmw-stat.png) -->
-<img src="https:/images/equations/1wmw-stat.png" width="200">  
+&nbsp;<img src="https:/images/equations/1wmw-stat.png" width="200">  
 
 &nbsp;  
 
@@ -64,12 +65,12 @@ and _Y +_, _Y −_ denote the positive and negative class respectively, and pi =
 
 
 <!-- ![3hinge](/images/equations/3hinge.png) -->
-<img src="https:/images/equations/3hinge.png" width="200">
+&nbsp;<img src="https:/images/equations/3hinge.png" width="200">
 
 &nbsp;  
 
 <!-- ![zero one loss](/images/zeroOne.png) -->
-<img src="https:/images/zeroOne.png" width="550">
+&nbsp;<img src="https:/images/zeroOne.png" width="550">
 
 &nbsp;  
 
@@ -84,16 +85,16 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
-<img src="https:/images/equations/4tp-and-fp.png" width="400">
+&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="400">
 
 &nbsp;  
 
-where $b$ is the chosen threshold and  
+&nbsp;where _b_ is the chosen threshold and  
 
 &nbsp;  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
-<img src="https:/images/equations/5tp-and-fp.png" width="400">
+&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="400">
 
 
 
@@ -109,18 +110,18 @@ Sensitivity@Specificity
 
 &nbsp;  
 
-α : the target specificity
-_b_ : the threshold at which the classification should be made
+&nbsp;α : the target specificity
+&nbsp;_b_ : the threshold at which the classification should be made
 
 &nbsp;  
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
-<img src="https:/images/equations/6-send-and-spec.png" width="200">
+&nbsp;<img src="https:/images/equations/6-send-and-spec.png" width="200">
 
 &nbsp;  
 
 <!-- ![7-send-spec](/images/equations/7-send-spec.png) -->
-<img src="https:/images/equations/7-send-spec.png" width="400">
+&nbsp;<img src="https:/images/equations/7-send-spec.png" width="400">
 
 &nbsp;  
 
@@ -131,13 +132,13 @@ it is known that
 &nbsp;  
 
 <!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
-<img src="https:/images/equations/8-sens-spec.png" width="400">
+&nbsp;<img src="https:/images/equations/8-sens-spec.png" width="400">
 
 
 &nbsp;  
 
 
-and the loss function can be calculated by
+&nbsp;and the loss function can be calculated by
 
 
 &nbsp;  
@@ -165,12 +166,12 @@ It has been shown that ranking with a surrogate hinge loss is effective for maxi
 
 ## Ranking loss
 
-Binary Cross Entropy to to Log Ratio
+Binary Cross Entropy to Log Ratio
 
 &nbsp;  
 
 <!-- ![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png) -->
-<img src="https:/images/equations/9-bce-to-log-ratio.png" width="200">
+&nbsp;<img src="https:/images/equations/9-bce-to-log-ratio.png" width="200">
 
 &nbsp;  
 
@@ -181,7 +182,7 @@ Binary Cross Entropy to to Log Ratio
 
 
 <!-- ![10-non-decomposable-formulation](/images/equations/10-non-decomposable-formulation.png) -->
-<img src="https:/images/equations/10-non-decomposable-formulation.png" width="200">
+&nbsp;<img src="https:/images/equations/10-non-decomposable-formulation.png" width="200">
 
 &nbsp;  
 
@@ -191,7 +192,7 @@ Binary Cross Entropy to to Log Ratio
 &nbsp;  
 
 <!-- ![11-decomposable-formulation](/images/equations/11-decomposable-formulation.png) -->
-<img src="https:/images/equations/11-decomposable-formulation.png" width="200">
+&nbsp;<img src="https:/images/equations/11-decomposable-formulation.png" width="200">
 
 &nbsp;  
 
