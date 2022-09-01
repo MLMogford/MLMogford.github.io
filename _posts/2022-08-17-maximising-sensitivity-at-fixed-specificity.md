@@ -14,8 +14,9 @@ In a situation where there is a large class imbalance, for example many negative
 
 Conversely, Sensitivity is the reason for the program’s existence, and the maximum number of cases should be diagnosed as early as possible to to allow the person the greatest change of effective treatment and recovery. This compromise between Sensitivity and Specificity is intrinsic to all screening programs. It is important to know the strengths and weaknesses of a system, and the ROC curve provides a visual indicator of whose components can be quantified, as illustrated in figure 1.
 
-![ROC curve](/images/ROC.png)
+<!-- ![ROC curve](/images/ROC.png) -->
 
+<img src="https:/images/ROC.png" width="1000">
 
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
@@ -29,21 +30,31 @@ Optimising for AUC related metrics can be difficult as it involves ranking posit
 
 The AUC, as a common measure for most medical imaging problems, can be formulated as a ranking problem, in which it measures the expectation of drawing positive instances that are ranked higher than negative instances using some ranking functions π : X → [0, 1]:
 
-AUC = E(π+ > π−),  
+AUC = E(π+ > π−),   
+
+&nbsp&nbsp&nbsp  
 
 where E(.) denotes the expectation over the data distribution.  
 
+&nbsp&nbsp  
 
-The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:
+The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:  
+
+
+&nbsp  
+
 
 <!-- ![1wmw](/images/equations/1wmw-stat.png) -->
-<img src="https:/images/equations/1wmw-stat.png" width="200">
+<img src="https:/images/equations/1wmw-stat.png" width="200">  
+
+&nbsp  
 
 
 
 <!-- ![2wmw-stat](/images/equations/2wmw-stat.png) -->
-<img src="https:/images/equations/2wmw-stat.png" width="300">
+<img src="https:/images/equations/2wmw-stat.png" width="300">  
 
+&nbsp  
 
 and Y +, Y − denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
@@ -51,7 +62,8 @@ and Y +, Y − denote the positive and negative class respectively, and pi = p(x
 <!-- ![3hinge](/images/equations/3hinge.png) -->
 <img src="https:/images/equations/3hinge.png" width="400">
 
-![zero one loss](/images/zeroOne.png)
+<!-- ![zero one loss](/images/zeroOne.png) -->
+<img src="https:/images/zeroOne.png" width="800">
 
 
 Despite the objective function being differentiable, it does not often work well in large datasets due to the non-decomposable nature of the objective, which restricts the effectiveness of batch training.
