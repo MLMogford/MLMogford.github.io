@@ -14,11 +14,11 @@ In a situation where there is a large class imbalance within the data, for examp
 
 1. The model may overfit to the samples available for training, validation and testing; it is not possible to include all samples that exist currently and samoples yet to be collected in future screening sessions and train a model on these. If a model achieves very high AUROC (0.99 or 1), then this model may not generalise to newly collected samples. If it were possible to collect all past and future samples and add them to the model, the hardware constraints would lead to unfeasable training time  
 
-nb. There may be the possibility to reduce the training sample size to samples that capture the entirity of the feature space during training and this could reduce the number of samples required, but online discarding of samples that do not provide gradient would be required, and this would not extend into the feature space potentially provided by new samples added. Medical imaging hardware is progressing at a rapid pace, rendering older images redundant and unable to assist in the prediction of newer image types, future images are out of distribution (OOD) for these presently available images.  
+&nbsp;nb. There may be the possibility to reduce the training sample size to samples that capture the entirity of the feature space during training and this could reduce the number of samples required, but online discarding of samples that do not provide gradient would be required, and this would not extend into the feature space potentially provided by new samples added. Medical imaging hardware is progressing at a rapid pace, rendering older images redundant and unable to assist in the prediction of newer image types, future images are out of distribution (OOD) for these presently available images.  
 
 2. Clinicians do not work under the paradigm of AUROC performance, this metric is best modified to represent a threshold, set at a fixed Sensitivity or Specificity to measure performance. In the case of a cancer screening programme, the Specificity is the primary metric to consider because it affects the vast majority of people involved. At a programme level small percentage of false positive results affects a vast number of people; and at a personal level, each can lead to personal distress or, in extreme cases, reduce the legitimacy of the program.  
 
-Conversely, Sensitivity is the ability to detect the cancerous lesions within the population, the maximum number of cases should be diagnosed as early as possible to to allow the person the greatest chance of effective treatment and recovery. This compromise between Sensitivity and Specificity is intrinsic to all screening programmes. 
+&nbsp;Conversely, Sensitivity is the ability to detect the cancerous lesions within the population, the maximum number of cases should be diagnosed as early as possible to to allow the person the greatest chance of effective treatment and recovery. This compromise between Sensitivity and Specificity is intrinsic to all screening programmes. 
 
 It is important to know the strengths and weaknesses of a system, and the _ROC curve_ provides a visual indicator of whose components can be quantified, as illustrated in figure 1.
 
@@ -29,13 +29,10 @@ It is important to know the strengths and weaknesses of a system, and the _ROC c
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
 
-Deep learning models demonstrate outstanding performance in complex pattern recognition tasks [3] and can be applied to screening programmes where radiographs are used as a part of the screening process. If a machine learning (ML) model can perform to the standard of human readers, its integration into the cancer screening workflow can alleviate the resource burden without sacrificing performance [4]. It has been demomnstrated that in out example, Specificity is a more likely metric to anchor in this half of the Sensitivity-Specificity trade-off paradigm, and maximise Sensitivity, we can choose the benchmark Specificity of top ranking Radiologists. This way we know with reasonable certainty that the number of false positives will affect a similar proportion of people to the human system, and focus on the Sensitivity component of the metric. Evaluation is made by choosing a decision threshold such that the model’s Specificity matches with human’s Specificity, and comparing between human’s Sensitivity and model’s Sensitivity at the chosen threshold is common practice [5],andML models typically fall short of the human level Sensitivity. As such, it may be beneficial to improve the model’s performance by having an objective function that takes into account this evaluation procedure. While this can be achieved by either optimising for the AUC directly, a preferred  methon may be to optimise for a model’s performance at a specific operating point.  
-
-END
+Deep learning models demonstrate outstanding performance in complex pattern recognition tasks [3] and can be applied to screening programmes where radiographs are used as a part of the screening process. If a machine learning (ML) model can perform to the standard of human readers, its integration into the cancer screening workflow can alleviate the resource burden without sacrificing performance [4]. It has been demomnstrated that in out example, Specificity is a more likely metric to anchor in this half of the Sensitivity-Specificity trade-off paradigm, and maximise Sensitivity, we can choose the benchmark Specificity of top ranking Radiologists. This way we know with reasonable certainty that the number of false positives will affect a similar proportion of people to the human system, and focus on the Sensitivity component of the metric. Evaluation is made by choosing a decision threshold such that the model’s Specificity matches with human’s Specificity, and comparing between human’s Sensitivity and model’s Sensitivity at the chosen threshold is common practice [5],andML models typically fall short of the human level Sensitivity. As such, it may be beneficial to improve the model’s performance by having an objective function that takes into account this evaluation procedure. While this can be achieved by either optimising for the AUC directly, a preferred  methon may be to optimise for a model’s performance at a specific operating point. Even if the AUROC remains unchanged, the curve may be manipulated by the loss function to, in the case of the example, more accurately classify true positives at a set tru negative rate.  
 
 
-
-Optimising for AUC related metrics can be difficult as it involves ranking positive instances against negative instances in the whole population. An estimator for the AUC is the Wilcoxon Mann Whitney (WMW) statistic [6], which ranks instances in the training sample using the step function. However, the WMW statistic is inappropriate as a loss function because the step function is non-differentiable. Additionally, the requirement for exhaustive ranking means that batch training with stochastic gradient descent [7] is inadequate, as it does not allow for the comparison between instances across different batches, i.e. it is non-decomposable. Previous work circumvents the non-differentiable and non-decomposable problems by using a surrogate loss that ranks instances against a threshold [8]. In this paper, we extend on previous work and introduce a constrained optimisation objective that maximise Sensitivity and Specificity at a given threshold. Experimental results show that the proposed method improves the model’s Sensitivity at a set threshold over the Binary Cross Entropy (BCE) loss baseline.
+Optimising for AUC related metrics can be difficult as it involves ranking positive instances against negative instances in the whole population. An estimator for the AUC is the Wilcoxon Mann Whitney (WMW) statistic [6], which ranks instances in the training sample using the step function (illustreten in Figure 2). However, the WMW statistic is inappropriate as a loss function because the step function is non-differentiable. Additionally, the requirement for exhaustive ranking means that batch training with stochastic gradient descent [7] is inadequate, as it does not allow for the comparison between instances across different batches, i.e. it is non-decomposable. Previous work circumvents the non-differentiable and non-decomposable problems by using a surrogate loss that ranks instances against a threshold for the optimise Precision (the number of true positives out of all samples classified as positive) at a fixed Sensitivity[8]. This previous work can be extended upon to introduce a constrained optimisation objective that maximise Sensitivity and Specificity at a given threshold. 
 
 ## Examples of AUC optimisation in the past
 
@@ -91,7 +88,7 @@ Despite the objective function being differentiable, it does not often work well
 
 
 ## Training with Optimisation Constraints
-As a way to circumvent the non-decomposable issue, [8] restricts the ranking to a particular threshold and optimises Sensitivity and Precision using a lower and upper bound surrogates
+As a way to circumvent the non-decomposable issue, [8] restricts the ranking to a threshold and optimises Sensitivity and Precision using a lower and upper bound surrogates
 
 &nbsp;  
 
@@ -109,13 +106,13 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 
 
 
-This formulation serves as a foundation for our adaptation of the objective function that maximises Sensitivity at a chosen Specificity.  
+This formulation serves as a foundation for an adaptation of the objective function that maximises Sensitivity at a chosen Specificity.  
 
 
 ## Sensitivity@Specificity formulation
 
 
-Based on the definitions of true positive (tp) and false positive (fp) in [8], their work, based on Sensitivity at a target Precision can be extended to the form relevant to the cancer screening problem outlined earlier. The Sensitivity at a set Specificity loss was derived as shown below.
+Based on the definitions of true positive (_tp_) and false positive (_fp_) in [8], their work, based on Sensitivity at a target Precision can be extended to the form relevant to the cancer screening problem outlined earlier. The Sensitivity at a set Specificity loss was derived as shown below.
 Sensitivity@Specificity  
 
 
@@ -160,15 +157,15 @@ This loss function can replace BCE loss to adjust a model's performance to achie
 
 
 
-For the Sensitivity at Specificity to work, α is the inverse of the desired Specificity, γ is a hyperparameter that requires tuning, and threshold is the threshold that is given by the post-test analysis to achieve a 96% Specificity.  
+For the Sensitivity at Specificity to work, α is the inverse of the desired Specificity, γ is a hyperparameter that requires tuning, and threshold is the threshold that is given by the post-test analysis to achieve a desired Specificity (i.e. 1-0.96=0.4 for a 96% Specificity).  
 
 
 
-The application of hinge loss as an approximation has been replicated on the cancer screening dataset supplied by BreastScreen Australia. The rectified linear  hinge loss shows no improvement over cross entropy when AUC is examined, and although the Sensitivity at a target Specificity does improve. This demonstrates that the shape of the Receiver Operating Characteristic can be modified. In addition, the loss bound provided by a linear function can potentially be improved upon by imposing a tighter upper bound to the step function.  
+Experimental results showed the rectified linear hinge loss (as seen in Figure 2) did not improvem over cross entropy when AUROC was examined, although the Sensitivity at a target Specificity does improve. This demonstrates that the shape of the Receiver Operating Characteristic curve can be modified. In addition, the loss bound provided by a linear function can potentially be improved upon by imposing a tighter upper bound to the step function.   
 
 
 
-It has been shown that ranking with a surrogate hinge loss is effective for maximising Sensitivity at a set Specificity, however, hinge loss does not provide a tight upper bound for the Zero-One loss step function. Cross entropy uses the log function to discriminate probabilities of groups with good performance on normally distributed datasets. The application of the log function as a tighter upper bound is an appealing area of future work. It has already been shown that ranking loss functions can be applied to specific non-decomposable objectives, and the work so far relies on hinge loss. Ranking with the logarithmic function as an upper bound has challenges related to numerical stability and further work to show it's effectiveness and practical use is required. The benefits of this future work are ranking loss methods that perform as well or better than BCE loss, but can be explicitly applied to non-decomposable objectives.  
+Ranking with a surrogate hinge loss is effective for maximising Sensitivity at a set Specificity, however, hinge loss does not provide a tight upper bound for the Zero-One loss step function. Cross entropy uses the log function to discriminate probabilities of groups with good performance on normally distributed datasets. The application of the log function as a tighter upper bound is an area of future work that shows theoretical promise. It has already been shown that ranking loss functions can be applied to specific non-decomposable objectives, and the work so far relies on hinge loss. Ranking with the logarithmic function as an upper bound has challenges related to numerical stability and further work to show it's effectiveness and practical use is required. The benefits of this future work are ranking loss methods that perform as well or better than BCE loss, but can be explicitly applied to non-decomposable objectives. The formulation of a decomposable logarithmic function bounded ranking loss function is described below.
 
 
 
