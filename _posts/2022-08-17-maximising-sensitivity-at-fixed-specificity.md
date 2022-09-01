@@ -12,11 +12,11 @@ The Area Under the Receiver Operating Characteristic (AUROC) curve is used as a 
 
 In a situation where there is a large class imbalance within the data, for example many negative outcomes in a cancer screening programme where radiographs are used to detect lesions that may indicate the presence of cancer, the AUROC is the metric preferred to accuracy because it better reflects the ability of a model to correctly predict positive (the true positive rate, TPR; or Sensitivity) and negative samples (the true negative rate, TNR; or Specificity) rather than overclassifying the majority calss. With respect to the cancer screening programme example, the AUROC is not sufficient, although a higher AUROC metric is desirable, there is a limit to the practicality of high metric scores. This limit is manifest in two ways:  
 
-1. The model may overfit to the samples available for training, validation and testing; it is not possible to include all samples that exist currently and samoples yet to be collected in future screening sessions and train a model on these. If a model achieves very high AUROC (0.99 or 1), then this model may not generalise to newly collected samples. If it were possible to collect all past and future samples and add them to the model, the hardware constraints would lead to unfeasable training time  
+1/ The model may overfit to the samples available for training, validation and testing; it is not possible to include all samples that exist currently and samoples yet to be collected in future screening sessions and train a model on these. If a model achieves very high AUROC (0.99 or 1), then this model may not generalise to newly collected samples. If it were possible to collect all past and future samples and add them to the model, the hardware constraints would lead to unfeasable training time  
 
 &nbsp;nb. There may be the possibility to reduce the training sample size to samples that capture the entirity of the feature space during training and this could reduce the number of samples required, but online discarding of samples that do not provide gradient would be required, and this would not extend into the feature space potentially provided by new samples added. Medical imaging hardware is progressing at a rapid pace, rendering older images redundant and unable to assist in the prediction of newer image types, future images are out of distribution (OOD) for these presently available images.  
 
-2. Clinicians do not work under the paradigm of AUROC performance, this metric is best modified to represent a threshold, set at a fixed Sensitivity or Specificity to measure performance. In the case of a cancer screening programme, the Specificity is the primary metric to consider because it affects the vast majority of people involved. At a programme level small percentage of false positive results affects a vast number of people; and at a personal level, each can lead to personal distress or, in extreme cases, reduce the legitimacy of the program.  
+2/ Clinicians do not work under the paradigm of AUROC performance, this metric is best modified to represent a threshold, set at a fixed Sensitivity or Specificity to measure performance. In the case of a cancer screening programme, the Specificity is the primary metric to consider because it affects the vast majority of people involved. At a programme level small percentage of false positive results affects a vast number of people; and at a personal level, each can lead to personal distress or, in extreme cases, reduce the legitimacy of the program.  
 
 &nbsp;Conversely, Sensitivity is the ability to detect the cancerous lesions within the population, the maximum number of cases should be diagnosed as early as possible to to allow the person the greatest chance of effective treatment and recovery. This compromise between Sensitivity and Specificity is intrinsic to all screening programmes. 
 
@@ -206,34 +206,14 @@ Binary Cross Entropy to Log Ratio
 
 ## References  
 
-[1] David M. Green and John A. Swets. Signal Detection Theory and Psychophysics. New York: Wiley, 1966.  
-
-[2] “2016 Workforce Survey Report: AUSTRALIA”. In: Faculty of Clinical Radiology, The Royal Australian and New Zealand Collage of Radiologists®, Date of approval: 15 February 2018, 2018, pp. 44–45.  
-
-[3] Jeremy Irvin et al. “Chexpert: A large chest radiograph dataset with uncertainty labels and expert comparison”. In: Proceedings of the AAAI conference on artificial intelligence. Vol. 33. 01. 2019, pp. 590–597.  
-
-[4] Kai Qin and Hong Pan. “MDPP Technical Report, Validate and Improve Breast Cancer AI Approach”. In:(Dec. 2020).  
-
-[5] Mattie Salim et al. “External Evaluation of 3 Commercial Artificial Intelligence Algorithms for Independent Assessment of Screening Mammograms”. In: JAMA Oncology 6.10 (Oct. 2020), pp. 1581–1588. ISSN:2374-2437.DOI:10.1001/jamaoncol.2020.3321.eprint:https://jamanetwork.com/journals/jamaoncology/articlepdf/2769894/jamaoncology\_salim\_2020\_oi\_200057\_1619718170.78837.pdf.URL: https://doi.org/10.1001/jamaoncol.2020.3321.  
-
-[6] H. B. Mann and D. R. Whitney. “On a Test of Whether one of Two Random Variables is Stochastically Largerthan the Other”. In: The Annals of Mathematical Statistics 18.1 (1947), pp. 50 –60. DOI: 10.1214/aoms/1177730491. URL: https://doi.org/10.1214/aoms/1177730491.  
-
-[7] Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep learning. MIT press, 2016.  
-
-[8] Elad Eban et al. “Scalable Learning of Non-Decomposable Objectives”. In: Proceedings of the 20th International Conference on Artificial Intelligence and Statistics. Ed. by Aarti Singh and Jerry Zhu. Vol. 54. Proceedings of Machine Learning Research. PMLR, 2017, pp. 832–840.  
-
-[9] Lian Yan et al. “Optimizing Classifier Performance via an Approximation to the Wilcoxon-Mann-Whitney Statistic”. In: ICML. 2003.  
-
-[10] Mingxing Tan and Quoc Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks”. In: (May 2019).  
-
-[11] Diederik Kingma and Jimmy Ba. “Adam: A Method for Stochastic Optimization”. In: International Conference on Learning Representations (Dec. 2014)
-
-
-
-
-
-extra:
-
-However, in clinical practice, a threshold must be set for a decision to be made, often selected such that the model’s Specificity matches that of human read- ers. Experimental results show that by matching Specificity, the model’s Sensitivity can often fall short of radiologist level results, hence there is a need for an optimisation objective that maximises Sensitivity at a given Specificity.
-  
-  
+1. David M. Green and John A. Swets. Signal Detection Theory and Psychophysics. New York: Wiley, 1966.
+2. “2016 Workforce Survey Report: AUSTRALIA”. In: Faculty of Clinical Radiology, The Royal Australian and New Zealand Collage of Radiologists®, Date of approval: 15 February 2018, 2018, pp. 44–45.
+3. Jeremy Irvin et al. “Chexpert: A large chest radiograph dataset with uncertainty labels and expert comparison”. In: Proceedings of the AAAI conference on artificial intelligence. Vol. 33. 01. 2019, pp. 590–597.
+4. Kai Qin and Hong Pan. “MDPP Technical Report, Validate and Improve Breast Cancer AI Approach”. In:(Dec. 2020).
+5. Mattie Salim et al. “External Evaluation of 3 Commercial Artificial Intelligence Algorithms for Independent Assessment of Screening Mammograms”. In: JAMA Oncology 6.10 (Oct. 2020), pp. 1581–1588. ISSN:2374-2437.DOI:10.1001/jamaoncol.2020.3321.eprint:https://jamanetwork.com/journals/jamaoncology/articlepdf/2769894/jamaoncology\_salim\_2020\_oi\_200057\_1619718170.78837.pdf.URL: https://doi.org/10.1001/jamaoncol.2020.3321.
+6. H. B. Mann and D. R. Whitney. “On a Test of Whether one of Two Random Variables is Stochastically Largerthan the Other”. In: The Annals of Mathematical Statistics 18.1 (1947), pp. 50 –60. DOI: 10.1214/aoms/1177730491. URL: https://doi.org/10.1214/aoms/1177730491.
+7. Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep learning. MIT press, 2016.
+8. Elad Eban et al. “Scalable Learning of Non-Decomposable Objectives”. In: Proceedings of the 20th International Conference on Artificial Intelligence and Statistics. Ed. by Aarti Singh and Jerry Zhu. Vol. 54. Proceedings of Machine Learning Research. PMLR, 2017, pp. 832–840.
+9. Lian Yan et al. “Optimizing Classifier Performance via an Approximation to the Wilcoxon-Mann-Whitney Statistic”. In: ICML. 2003.
+10. Mingxing Tan and Quoc Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks”. In: (May 2019).
+11. Diederik Kingma and Jimmy Ba. “Adam: A Method for Stochastic Optimization”. In: International Conference on Learning Representations (Dec. 2014)
