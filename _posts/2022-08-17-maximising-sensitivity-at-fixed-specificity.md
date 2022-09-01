@@ -16,7 +16,7 @@ Conversely, Sensitivity is the reason for the program’s existence, and the max
 
 <!-- ![ROC curve](/images/ROC.png) -->
 
-<img src="https:/images/ROC.png" width="1000">
+<img src="https:/images/ROC.png" width="600">
 
 
 <!-- ![image](https://your-image-url.type) with <img src="https://your-image-url.type" width="600"> -->
@@ -28,35 +28,35 @@ Optimising for AUC related metrics can be difficult as it involves ranking posit
 
 ## Examples of AUC optimisation in the past
 
-The AUC, as a common measure for most medical imaging problems, can be formulated as a ranking problem, in which it measures the expectation of drawing positive instances that are ranked higher than negative instances using some ranking functions π : X → [0, 1]:
+The AUC, as a common measure for most medical imaging problems, can be formulated as a ranking problem, in which it measures the expectation of drawing positive instances that are ranked higher than negative instances using some ranking functions _π : X → [0, 1]_:
 
-AUC = E(π+ > π−),   
+_AUC = E(π+ > π−)_,   
 
 &nbsp&nbsp&nbsp  
 
 where E(.) denotes the expectation over the data distribution.  
 
-&nbsp&nbsp  
+&nbsp;   
 
 The sample estimate of the AUC is the Wilcoxon–Mann–Whitney statistic [6]:  
 
 
-&nbsp  
+&nbsp;  
 
 
 <!-- ![1wmw](/images/equations/1wmw-stat.png) -->
 <img src="https:/images/equations/1wmw-stat.png" width="200">  
 
-&nbsp  
+&nbsp;  
 
 
 
 <!-- ![2wmw-stat](/images/equations/2wmw-stat.png) -->
 <img src="https:/images/equations/2wmw-stat.png" width="300">  
 
-&nbsp  
+&nbsp;   
 
-and Y +, Y − denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
+and _Y +_, _Y −_ denote the positive and negative class respectively, and pi = p(xi) denotes the assessed probability, which in this case is the Machine Learning model’s output. Directly optimising for the WMW statistic is not possible given the non-differentiable nature of the step function. Previous work [9] proposed a surrogate hinge loss that acts as an upper-bound for the step function
 
 
 <!-- ![3hinge](/images/equations/3hinge.png) -->
@@ -95,7 +95,7 @@ Sensitivity@Specificity
 
 
 α : the target specificity
-*b* : the threshold at which the classification should be made
+_b_ : the threshold at which the classification should be made
 
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
