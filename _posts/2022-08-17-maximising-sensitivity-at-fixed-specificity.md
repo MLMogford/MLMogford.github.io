@@ -85,7 +85,7 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
-&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="250">
+&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="350">
 
 &nbsp;  
 
@@ -94,7 +94,7 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
-&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="300">
+&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="400">
 
 
 
@@ -132,7 +132,7 @@ it is known that
 &nbsp;  
 
 <!-- ![ 8-sens-spec](/images/equations/8-sens-spec.png) -->
-&nbsp;<img src="https:/images/equations/8-sens-spec.png" width="350">
+&nbsp;<img src="https:/images/equations/8-sens-spec.png" width="400">
 
 
 &nbsp;  
@@ -171,7 +171,7 @@ Binary Cross Entropy to Log Ratio
 &nbsp;  
 
 <!-- ![ 9-bce-to-log-ratio](/images/equations/9-bce-to-log-ratio.png) -->
-&nbsp;<img src="https:/images/equations/9-bce-to-log-ratio.png" width="300">
+&nbsp;<img src="https:/images/equations/9-bce-to-log-ratio.png" width="400">
 
 &nbsp;  
 
@@ -196,7 +196,7 @@ Binary Cross Entropy to Log Ratio
 
 &nbsp;  
 
-##References  
+## References  
 
 [1] David M. Green and John A. Swets. Signal Detection Theory and Psychophysics. New York: Wiley, 1966.  
 
