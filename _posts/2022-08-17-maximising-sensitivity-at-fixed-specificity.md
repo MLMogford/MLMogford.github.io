@@ -85,7 +85,7 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![4tp-and-fp](/images/equations/4tp-and-fp.png) -->
-&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="350">
+&nbsp;&nbsp;<img src="https:/images/equations/4tp-and-fp.png" width="300">
 
 &nbsp;  
 
@@ -94,7 +94,7 @@ As a way to circumvent the non-decomposable issue, [8] restricts the ranking to 
 &nbsp;  
 
 <!-- ![5tp-and-fp](/images/equations/5tp-and-fp.png) -->
-&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="400">
+&nbsp;<img src="https:/images/equations/5tp-and-fp.png" width="350">
 
 
 
