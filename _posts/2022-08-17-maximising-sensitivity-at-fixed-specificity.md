@@ -169,7 +169,7 @@ Ranking with a surrogate hinge loss is effective for maximising Sensitivity at a
 
 &nbsp;  
 
-&nbsp;<img src="https:/images/rectified_log_ratio.png" width="600">
+&nbsp;<img src="https:/images/rectified_log_ratio.png" width="350">
 
 &nbsp;  
 
