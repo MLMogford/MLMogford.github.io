@@ -165,9 +165,11 @@ Experimental results showed the rectified linear hinge loss (as seen in Figure 2
 
 
 
-Ranking with a surrogate hinge loss is effective for maximising Sensitivity at a set Specificity, however, hinge loss does not provide a tight upper bound for the Zero-One loss step function. Cross entropy uses the log function to discriminate probabilities of groups with good performance on normally distributed datasets. The application of the log function as a tighter upper bound is an area of future work that shows theoretical promise. It has already been shown that ranking loss functions can be applied to specific non-decomposable objectives, and the work so far relies on hinge loss. Ranking with the logarithmic function as an upper bound has challenges related to numerical stability and further work to show it's effectiveness and practical use is required. The benefits of this future work are ranking loss methods that perform as well or better than BCE loss, but can be explicitly applied to non-decomposable objectives. The formulation of a decomposable logarithmic function bounded ranking loss function is described below.
+Ranking with a surrogate hinge loss is effective for maximising Sensitivity at a set Specificity, however, hinge loss does not provide a tight upper bound for the Zero-One loss step function. Cross entropy uses the log function to discriminate probabilities of groups with good performance on normally distributed datasets. The application of the log function as a tighter upper bound is an area of future work that shows theoretical promise. It has already been shown that ranking loss functions can be applied to specific non-decomposable objectives, and the work so far relies on hinge loss. Ranking with the logarithmic function as an upper bound has challenges related to numerical stability and further work to show it's effectiveness and practical use is required. The benefits of this future work are ranking loss methods that perform as well or better than BCE loss, but can be explicitly applied to non-decomposable objectives. The formulation of a decomposable logarithmic function bounded ranking loss function is described below and illustreted in Figure 3.
 
+&nbsp;  
 
+&nbsp;<img src="https:/images/rectified_log_ratio.png" width="600">
 
 &nbsp;  
 
