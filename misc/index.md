@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  
-excerpt: " "
+title: Projects  
+excerpt: "A collection of projects. I am working on"
 tags: [ ]
 comments: true
 
@@ -11,6 +11,14 @@ image:
   creditlink: http://mlmogford.dev/
 ---
 
+---
 
-##  
+##  Object Detection  
 
+---
+
+---
+
+##  Natural Language Processing and Sentiment Analysis  
+
+---
