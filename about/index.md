@@ -23,25 +23,30 @@ This professional experience is complemented by a strong sense of community serv
 ## Professional Experience
 ---
 
-Machine Learning Engineer and Data Scientist @ Consilium Technology  
+Machine Learning Engineer and Data Scientist  
+Consilium Technology  
 Jan. 2022 – Present  
 
-Totor @ University of Adelaide  
+Totor  
+University of Adelaide  
 Jan. 2021 – Dec. 2021  
 Foundations in Computer Science (Master)  
 Introduction to Software Engineering (Undergrad)  
 
-Artificial Intelligence Specialist (Intern) @ LBT innovations  
+Artificial Intelligence Specialist (Intern)  
+LBT innovations  
 Jan. 2020 – July 2020  
 
-Social Support Program Volunteer. @ Australian Refugee Association    
+Social Support Program Volunteer  
+Australian Refugee Association    
 Nov. 2013 - June 2014, Dec. 2019 - Present  
 
 &nbsp;  
 
----
 
 ## Education  
+
+---
 
 PhD in Computer Science    
 University of Adelaide, Australian Institute for Machine Learning  
