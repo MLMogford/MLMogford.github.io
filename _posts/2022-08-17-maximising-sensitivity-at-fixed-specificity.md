@@ -124,7 +124,7 @@ Sensitivity@Specificity
 &nbsp;  
 
 <!-- ![6-send-and-spec](/images/equations/6-send-and-spec.png) -->
-&nbsp;<img src="https:/images/equations/6-send-and-spec.png" width="250">
+&nbsp;&nbsp;<img src="https:/images/equations/6-send-and-spec.png" width="250">
 
 &nbsp;  
 
@@ -212,10 +212,11 @@ Binary Cross Entropy to Log Ratio
 2. “2016 Workforce Survey Report: AUSTRALIA”. In: Faculty of Clinical Radiology, The Royal Australian and New Zealand Collage of Radiologists®, Date of approval: 15 February 2018, 2018, pp. 44–45.
 3. Jeremy Irvin et al. “Chexpert: A large chest radiograph dataset with uncertainty labels and expert comparison”. In: Proceedings of the AAAI conference on artificial intelligence. Vol. 33. 01. 2019, pp. 590–597.
 4. Kai Qin and Hong Pan. “MDPP Technical Report, Validate and Improve Breast Cancer AI Approach”. In:(Dec. 2020).
-5. Mattie Salim et al. “External Evaluation of 3 Commercial Artificial Intelligence Algorithms for Independent Assessment of Screening Mammograms”. In: JAMA Oncology 6.10 (Oct. 2020), pp. 1581–1588. ISSN:2374-2437.DOI:10.1001/jamaoncol.2020.3321.eprint:https://jamanetwork.com/journals/jamaoncology/articlepdf/2769894/jamaoncology\_salim\_2020\_oi\_200057\_1619718170.78837.pdf.URL: https://doi.org/10.1001/jamaoncol.2020.3321.
-6. H. B. Mann and D. R. Whitney. “On a Test of Whether one of Two Random Variables is Stochastically Largerthan the Other”. In: The Annals of Mathematical Statistics 18.1 (1947), pp. 50 –60. DOI: 10.1214/aoms/1177730491. URL: https://doi.org/10.1214/aoms/1177730491.
-7. Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep learning. MIT press, 2016.
-8. Elad Eban et al. “Scalable Learning of Non-Decomposable Objectives”. In: Proceedings of the 20th International Conference on Artificial Intelligence and Statistics. Ed. by Aarti Singh and Jerry Zhu. Vol. 54. Proceedings of Machine Learning Research. PMLR, 2017, pp. 832–840.
-9. Lian Yan et al. “Optimizing Classifier Performance via an Approximation to the Wilcoxon-Mann-Whitney Statistic”. In: ICML. 2003.
-10. Mingxing Tan and Quoc Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks”. In: (May 2019).
-11. Diederik Kingma and Jimmy Ba. “Adam: A Method for Stochastic Optimization”. In: International Conference on Learning Representations (Dec. 2014)
+5. Mattie Salim et al. “External Evaluation of 3 Commercial Artificial Intelligence Algorithms for Independent Assessment of Screening Mammograms”. In: JAMA Oncology 6.10 (Oct. 2020), pp. 1581–1588. ISSN:2374-2437.DOI:10.1001/jamaoncol.2020.3321.eprint:https://jamanetwork.com/journals/jamaoncology/articlepdf/2769894/  
+jamaoncology\_salim\_2020\_oi\_200057\_1619718170.78837.pdf.URL: https://doi.org/10.1001/jamaoncol.2020.3321.
+7. H. B. Mann and D. R. Whitney. “On a Test of Whether one of Two Random Variables is Stochastically Largerthan the Other”. In: The Annals of Mathematical Statistics 18.1 (1947), pp. 50 –60. DOI: 10.1214/aoms/1177730491. URL: https://doi.org/10.1214/aoms/1177730491.
+8. Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep learning. MIT press, 2016.
+9. Elad Eban et al. “Scalable Learning of Non-Decomposable Objectives”. In: Proceedings of the 20th International Conference on Artificial Intelligence and Statistics. Ed. by Aarti Singh and Jerry Zhu. Vol. 54. Proceedings of Machine Learning Research. PMLR, 2017, pp. 832–840.
+10. Lian Yan et al. “Optimizing Classifier Performance via an Approximation to the Wilcoxon-Mann-Whitney Statistic”. In: ICML. 2003.
+11. Mingxing Tan and Quoc Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks”. In: (May 2019).
+12. Diederik Kingma and Jimmy Ba. “Adam: A Method for Stochastic Optimization”. In: International Conference on Learning Representations (Dec. 2014)
