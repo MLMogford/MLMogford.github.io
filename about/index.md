@@ -8,7 +8,7 @@ image:
   feature: adelaide01.jpg
   credit: Michael Mogford - South Australia
   creditlink: http://mlmogford.dev/
----
+---  
 
 Michael Mogford is a Machine Learning Engineer and Data Scientist working in Adelaide, South Australia.
 
@@ -21,7 +21,7 @@ This professional experience is complemented by a strong sense of community serv
 &nbsp;  
 
 ## Professional Experience
----
+---  
 
 &nbsp;  
 
@@ -30,6 +30,7 @@ Consilium Technology
 Jan. 2022 – Present  
 
 &nbsp;  
+&nbsp;  
 
 Tutor  
 University of Adelaide  
@@ -37,6 +38,7 @@ Jan. 2021 – Dec. 2021
 Foundations in Computer Science (Master)  
 Introduction to Software Engineering (Undergrad)  
 
+&nbsp;  
 &nbsp;  
 
 Artificial Intelligence Specialist (Intern)  
