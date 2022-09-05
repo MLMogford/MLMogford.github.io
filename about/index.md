@@ -23,19 +23,27 @@ This professional experience is complemented by a strong sense of community serv
 ## Professional Experience
 ---
 
+&nbsp;  
+
 Machine Learning Engineer and Data Scientist  
 Consilium Technology  
 Jan. 2022 – Present  
 
-Totor  
+&nbsp;  
+
+Tutor  
 University of Adelaide  
 Jan. 2021 – Dec. 2021  
 Foundations in Computer Science (Master)  
 Introduction to Software Engineering (Undergrad)  
 
+&nbsp;  
+
 Artificial Intelligence Specialist (Intern)  
 LBT innovations  
 Jan. 2020 – July 2020  
+
+&nbsp;  
 
 Social Support Program Volunteer  
 Australian Refugee Association    
@@ -48,10 +56,14 @@ Nov. 2013 - June 2014, Dec. 2019 - Present
 
 ---
 
+&nbsp;  
+
 PhD in Computer Science    
 University of Adelaide, Australian Institute for Machine Learning  
 Research: A deep learning multimodal mammogram classification system for population-scale cancer screening  
 Supervisor: Professor Gustavo Carneiro  
+
+&nbsp;  
 
 Masters in Advanced Computing  
 2019, Tsinghua University (P.R. China)  
@@ -59,13 +71,19 @@ Knowledge Engineering Group
 Thesis: Multimodal Breast Cancer Molecular Subtype Prediction from ultrasound images with a deep learning system  
 Supervisor: Professor Tang Jie  
 
+&nbsp;  
+
 Non-degree Language Training  
 2015, Peking University  
+
+&nbsp;  
 
 BSc (Health Science, Honours)  
 2013, University of Adelaide, Australian Institute for Sleep Health  
 Thesis: Effects of Minocycline on Chronic Pain Patients Receiving Opioid Treatment 
 Supervisor: Professor Peter Catcheside  
+
+&nbsp;  
 
 BSc (Biomedical Science)  
 2012, University of Adelaide  
