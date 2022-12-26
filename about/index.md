@@ -40,8 +40,8 @@ Machine Learning Engineer and Data Scientist
 &nbsp;Doctoral Researcher   
 &nbsp;University of Adelaide, Australian Institute for Machine Learning  
 &nbsp;Research topics:  
-&nbsp;&nbsp;A deep learning multimodal mammogram classification system for population-scale cancer screening  
-&nbsp;&nbsp;Formulation of a ranking based loss function to optimise Specificity at a set Sensitivity
+&nbsp; - A deep learning multimodal mammogram classification system for population-scale cancer screening  
+&nbsp; - Formulation of a ranking based loss function to optimise Specificity at a set Sensitivity  
 &nbsp;Supervisor: Professor Gustavo Carneiro  
 
 &nbsp;  
