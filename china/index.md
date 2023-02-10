@@ -8,7 +8,7 @@ comments: true
 image:
   feature: beijing01.jpg
   credit: Michael Mogford - Beijing
-  creditlink: https://www.mlmogford.dev/china
+  creditlink: https://www.mlmogford.dev/china/
 ---
 
 ## About China

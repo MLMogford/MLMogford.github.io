@@ -7,7 +7,7 @@ excerpt: "A Projects in Development"
 image:
   feature: nepal01.jpg
   credit: Michael Mogford - Annapurna
-  creditlink: ttps://www.mlmogford.dev/
+  creditlink: https://www.mlmogford.dev/projects/
 ---
 
 
