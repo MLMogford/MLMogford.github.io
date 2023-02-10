@@ -14,7 +14,7 @@ Michael Mogford is a Machine Learning Engineer and Data Scientist working in Ade
 
 &nbsp;  
 
-I to develop machine learning services within a variety of domains. I focus on designing the cloud architecture, assisting with machine learning model design, and implementing pipelines that bring these ideas to reality.  
+I work to develop machine learning services within a variety of domains. I focus on designing the cloud architecture, assisting with machine learning model design, and implementing pipelines that bring these ideas to reality.  
 
 &nbsp;  
 
