@@ -1,24 +1,18 @@
 ---
 layout: page
-title: Projects  
-excerpt: "A collection of projects. I am working on"
-tags: [ ]
-comments: true
+title: Projects
+excerpt: "A Projects in Development"
+
 
 image:
   feature: nepal01.jpg
   credit: Michael Mogford - Annapurna
-  creditlink: http://mlmogford.dev/
+  creditlink: ttps://www.mlmogford.dev/
 ---
 
----
 
-##  Object Detection  
+### VineToWine
 
----
+ Technical Lead and Principal Developer
 
----
-
-##  Natural Language Processing and Sentiment Analysis  
-
----
+ ---------------

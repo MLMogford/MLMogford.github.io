@@ -5,7 +5,7 @@ tags: [data science, machine leaning engineering, cloud architecture design, per
 image:
   feature: dunhuang01.jpg
   credit: Michael Mogford - Dunhuang
-  creditlink: http://mlmogford.dev/
+  creditlink: https://www.mlmogford.dev/
 ---
 
 

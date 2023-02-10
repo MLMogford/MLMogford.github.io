@@ -1,11 +1,18 @@
 ---
 layout: post-index
-title: All Misc Posts
-excerpt: "A List of Misc Posts"
+title: Projects
+excerpt: "A Projects in Development"
 
 
 image:
   feature: nepal01.jpg
   credit: Michael Mogford - Annapurna
-  creditlink: http://mlmogford.dev/
+  creditlink: ttps://www.mlmogford.dev/
 ---
+
+
+### VineToWine
+
+ Technical Lead and Principal Developer
+
+ ---------------

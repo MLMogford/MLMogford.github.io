@@ -7,14 +7,14 @@ comments: true
 image:
   feature: adelaide01.jpg
   credit: Michael Mogford - South Australia
-  creditlink: http://mlmogford.dev/
+  creditlink: https://www.mlmogford.dev/
 ---  
 
 Michael Mogford is a Machine Learning Engineer and Data Scientist working in Adelaide, South Australia.  
 
 &nbsp;  
 
-I work in a team to develop machine learning services within a variety of domains. I focus on designing the cloud architecture, assisting with machine learning model design, and implementing pipelines that bring these ideas to reality.  
+I to develop machine learning services within a variety of domains. I focus on designing the cloud architecture, assisting with machine learning model design, and implementing pipelines that bring these ideas to reality.  
 
 &nbsp;  
 
@@ -32,8 +32,12 @@ This professional experience is complemented by a strong sense of community serv
 &nbsp;  
 
 Machine Learning Engineer and Data Scientist  
+&nbsp;Freelance  
+&nbsp;Dec. 2022 – Present  
+
+Machine Learning Engineer and Data Scientist  
 &nbsp;Consilium Technology  
-&nbsp;Jan. 2022 – Present  
+&nbsp;Jan. 2022 – Jan. 2023  
 
 &nbsp;  
 
