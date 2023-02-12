@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Personal development workstation build"
-excerpt: "Serious ML developers can reduce their cloud expenses by developing locally and deploying containerised apps"
-tags: [Local Development, Freedom to Experiment]
+title: "Personal debug/experiments workstation build"
+excerpt: ""
+tags: [Early dev/debug environment]
 comments: true
 ---
+
+ML developers can reduce cloud expenses by running proof of concept experiments and debug projects locally, using the same containerised environments that will be used to deploy the model.  
 
 ## The Hardware
 
@@ -15,16 +17,18 @@ PSU:            SST-ST85F-PT SILVERSTONE STRIDER 80+ PLATINUM 850W POWER SUPPLY
 GPU:            MSI GEFORCE RTX 3060 VENTUS 2X 12G OC  
 CASE:           CC-9011210-WW CORSAIR 5000D AIRFLOW TEMPERED GLASS MID-TOWER CASE - BLACK  
 STORAGE:        MZ-77E1T0BW SAMSUNG 870 EVO 1TB 2.5" INTERNAL SSD, WD Black 2TB  
-Human-Computer-Interface:   Keychron Q10 keyboard, Logitech MX ERGO mouse,  Sony 49" tv (To aleviate near-distance focus and eye strain)
+HCI:   		Keychron Q10 keyboard, Logitech MX ERGO mouse
 
 
 
 ## OS and Software  
 
-To make proper use of docker, I have installed the basics:  
-OS:                     Ubuntu 22.04  
+OS:                     Ubuntu 22.04.1 LTS 64-bit  
+NVIDIA driver:		525.85.12  
+CUDA:			12.0  
+Docker:			20.10.23  
+Poetry:			1.3.2 (to assist in project config management)  
 Text editors:           VS Code, Obsidian  
-Continer management:    Docker  
-Sanity management:      Kigo  
+
 
 Now I can use the template repos in my GitHub account to initialise a project and maintain a stable deployment when the development work is complete.  
