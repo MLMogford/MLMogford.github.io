@@ -28,7 +28,7 @@ NVIDIA driver:		525.85.12
 CUDA:			    12.0  
 nvidia-ctk:		    1.12.0  
 Docker:			    20.10.23  
-Docker-compose:     1.29.2
+Docker-compose:     1.29.2  
 Poetry:			    1.3.2 (to assist in project config management)  
 Text editors:       VS Code, Obsidian  
 

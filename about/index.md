@@ -35,6 +35,8 @@ Machine Learning Engineer and Data Scientist
 &nbsp;Freelance  
 &nbsp;Dec. 2022 – Present  
 
+&nbsp;  
+
 Machine Learning Engineer and Data Scientist  
 &nbsp;Consilium Technology  
 &nbsp;Jan. 2022 – Jan. 2023  
