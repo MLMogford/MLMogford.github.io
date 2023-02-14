@@ -23,12 +23,14 @@ HCI:   		Keychron Q10 keyboard, Logitech MX ERGO mouse
 
 ## OS and Software  
 
-OS:                     Ubuntu 22.04.1 LTS 64-bit  
+OS:                 Ubuntu 22.04.1 LTS 64-bit  
 NVIDIA driver:		525.85.12  
-CUDA:			12.0  
-Docker:			20.10.23  
-Poetry:			1.3.2 (to assist in project config management)  
-Text editors:           VS Code, Obsidian  
+CUDA:			    12.0  
+nvidia-ctk:		    1.12.0  
+Docker:			    20.10.23  
+Docker-compose:     1.29.2
+Poetry:			    1.3.2 (to assist in project config management)  
+Text editors:       VS Code, Obsidian  
 
 
 Now I can use the template repos in my GitHub account to initialise a project and maintain a stable deployment when the development work is complete.  
