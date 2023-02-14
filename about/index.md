@@ -10,7 +10,7 @@ image:
   creditlink: https://www.mlmogford.dev/
 ---  
 
-Michael Mogford is a Machine Learning Engineer and Data Scientist working in Adelaide, South Australia.  
+Michael Mogford is a Machine Learning Engineer and Data Scientist working in Adelaide, South Australia.  AWS 2x certified (Machine Learning - Specialty, Solutions Architect - Associate)
 
 &nbsp;  
 

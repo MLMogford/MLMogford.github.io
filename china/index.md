@@ -25,7 +25,7 @@ A basic understanding of China is useful as it becomes a bigger part of the worl
 - The Three Kingdoms Podcast and The Water Margin Podcast  
 	- The translated editions do not always tell the full story. John Zhu contextualises and gives an entertaining run in these audiobooks. This is his passion project and you can really feel his entheusism while he retells the English versions of a couple of the most important works of Chinese literature.  
 - The Little Red Podcast  
-	- A podcast hosted by an Australian academic Graeme Smith and former BBC and NPR journalist Louisa Lim. Very interesting variety of guests including academics and high profile guests. Overall, it is a very critical podcast, bordering on negative.  
+	- A podcast hosted by an Australian academic Graeme Smith and former BBC and NPR journalist Louisa Lim. Very interesting variety of guests including academics and individuals whose lives have been profoundly influenced by their time in P.R.China. Overall, it is a very critical podcast, bordering on negative.  
 - GuShi FM  
 	- For those with intermediate to advanced Chinese language skills, this is a series of every-day stories recorded by local Chinese, similar to This American Life, but with less curation and input from the host AiZhi, the frequency of episodes means there will be something for everyone.  
 
