@@ -68,9 +68,40 @@ Artificial Intelligence Specialist (Intern)
 
 Social Support Program Volunteer  
 &nbsp;Australian Refugee Association    
-&nbsp;Nov. 2013 - June 2014, Dec. 2019 - Present  
+&nbsp;Dec. 2019 - Present  
 
 &nbsp;  
+
+Intern  					      	
+&nbsp;Peking University, Australian Studies Centre  
+&nbsp;Organisation and management of conferences and the ABC Boyer Lecture  
+&nbsp;Sept. 2015 – Dec. 2015  
+
+&nbsp;  
+
+
+Medical Technician  
+&nbsp;Repatriation General Hospital  
+&nbsp;March 2013 – June 2014  
+&nbsp;SA Health, Australian Institute for Sleep Health  
+&nbsp;Ensure high quality polysomnographic recordings, CPAP titration, patient education  
+
+
+
+&nbsp;  
+
+Medical Technician  
+&nbsp;The Memorial Hospital  
+&nbsp;Aug. 2011 - Oct. 2013  
+&nbsp;Sleep SA  
+&nbsp;Ensure high quality polysomnographic recordings, CPAP titration, patient education  
+
+&nbsp;  
+
+Homework Club Program Volunteer  
+&nbsp;Australian Refugee Association    
+&nbsp;Nov. 2013 - June 2014  
+
 
 
 ## Education  
